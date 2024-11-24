@@ -122,6 +122,11 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
         op_pf.setForeground(new java.awt.Color(255, 255, 255));
         op_pf.setText("Pessoa Física (P.F)");
         op_pf.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        op_pf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                op_pfActionPerformed(evt);
+            }
+        });
 
         telamainsd.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         telamainsd.setLayer(jSeparator2, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -325,6 +330,12 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Ocorreu um erro! revise o espaço selecionado.", "Opções selecionadas simultaneamente ou em branco.", HEIGHT);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void op_pfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_op_pfActionPerformed
+        if (op_pf.isValid()){
+            op_pj.setText(" ");
+        }
+    }//GEN-LAST:event_op_pfActionPerformed
 
     /**
      * @param args the command line arguments

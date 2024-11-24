@@ -1,26 +1,24 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package project_interface.view;
 
 import javax.swing.JOptionPane;
-import java.net.URI;
+
 /**
  *
  * @author samueldouglasdossantos
  */
-public class LoginPF_sdi extends javax.swing.JDialog {
+public class LoginPJ_sdi extends javax.swing.JFrame {
 
     /**
-     * Creates new form Cadastrouser
+     * Creates new form LoginPJ_sdi
      */
-    public LoginPF_sdi(java.awt.Frame parent, boolean modal) {
-        super(parent, modal);
+    public LoginPJ_sdi() {
         initComponents();
     }
-    
-   
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -30,17 +28,6 @@ public class LoginPF_sdi extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.JSpinner jSpinner1 = new javax.swing.JSpinner();
-        javax.swing.JPanel jPanel2 = new javax.swing.JPanel();
-        java.awt.MenuBar menuBar1 = new java.awt.MenuBar();
-        java.awt.Menu menu1 = new java.awt.Menu();
-        java.awt.Menu menu2 = new java.awt.Menu();
-        java.awt.MenuBar menuBar2 = new java.awt.MenuBar();
-        java.awt.Menu menu3 = new java.awt.Menu();
-        java.awt.Menu menu4 = new java.awt.Menu();
-        javax.swing.JPopupMenu jPopupMenu1 = new javax.swing.JPopupMenu();
-        javax.swing.JTextField jTextField1 = new javax.swing.JTextField();
-        javax.swing.JMenuItem jMenuItem10 = new javax.swing.JMenuItem();
         jPanel1 = new javax.swing.JPanel();
         btn_clean = new javax.swing.JButton();
         txtPassword = new javax.swing.JPasswordField();
@@ -54,7 +41,7 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         javax.swing.JLabel jLabel5 = new javax.swing.JLabel();
         javax.swing.JButton btn_salvar_CadastroPF = new javax.swing.JButton();
         javax.swing.JLabel linkLabel = new javax.swing.JLabel();
-        javax.swing.JMenuBar menu_bar = new javax.swing.JMenuBar();
+        javax.swing.JMenuBar jMenuBar1 = new javax.swing.JMenuBar();
         javax.swing.JMenu jMenu1 = new javax.swing.JMenu();
         javax.swing.JMenuItem jMenuItem1 = new javax.swing.JMenuItem();
         javax.swing.JMenuItem jMenuItem9 = new javax.swing.JMenuItem();
@@ -71,37 +58,7 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         javax.swing.JMenuItem jMenuItem7 = new javax.swing.JMenuItem();
         javax.swing.JMenuItem jMenuItem8 = new javax.swing.JMenuItem();
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-
-        menu1.setLabel("File");
-        menuBar1.add(menu1);
-
-        menu2.setLabel("Edit");
-        menuBar1.add(menu2);
-
-        menu3.setLabel("File");
-        menuBar2.add(menu3);
-
-        menu4.setLabel("Edit");
-        menuBar2.add(menu4);
-
-        jTextField1.setText("jTextField1");
-
-        jMenuItem10.setText("jMenuItem10");
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Acesso Pessoa Física");
-        setBackground(new java.awt.Color(51, 51, 51));
-        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(495, 730));
         setResizable(false);
 
@@ -174,7 +131,7 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         jLabel5.setFont(new java.awt.Font("Cantarell", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Acesso P.F");
+        jLabel5.setText("Acesso P.J");
         jLabel5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel5.setMinimumSize(new java.awt.Dimension(66, 25));
 
@@ -293,7 +250,7 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         });
         jMenu1.add(jMenuItem2);
 
-        menu_bar.add(jMenu1);
+        jMenuBar1.add(jMenu1);
 
         jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/P.J.png"))); // NOI18N
         jMenu5.setText("Pessoa Jurídica");
@@ -314,7 +271,7 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         });
         jMenu5.add(jMenuItem12);
 
-        menu_bar.add(jMenu5);
+        jMenuBar1.add(jMenu5);
 
         jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/contact(1).png"))); // NOI18N
         jMenu2.setText("Contato");
@@ -328,7 +285,7 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         jMenuItem5.setText("Email");
         jMenu2.add(jMenuItem5);
 
-        menu_bar.add(jMenu2);
+        jMenuBar1.add(jMenu2);
 
         jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/sobreicon.png"))); // NOI18N
         jMenu4.setText("Sobre");
@@ -347,9 +304,9 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         jMenuItem8.setText("Novas integrações");
         jMenu4.add(jMenuItem8);
 
-        menu_bar.add(jMenu4);
+        jMenuBar1.add(jMenu4);
 
-        setJMenuBar(menu_bar);
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -366,42 +323,49 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void checktermsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checktermsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_checktermsActionPerformed
-
     private void btn_cleanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cleanActionPerformed
-        
-        int resposta = JOptionPane.showConfirmDialog(rootPane, "Deseja realmente excluir?", "Verificação", JOptionPane.YES_NO_OPTION); 
+
+        int resposta = JOptionPane.showConfirmDialog(rootPane, "Deseja realmente excluir?", "Verificação", JOptionPane.YES_NO_OPTION);
         if (resposta==JOptionPane.YES_OPTION){
             txtLogin_pf.setText(" ");
             txtPassword.setText(" ");
         }
-        
-        
+
     }//GEN-LAST:event_btn_cleanActionPerformed
 
+    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPasswordActionPerformed
+
+    private void txtLogin_pfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLogin_pfActionPerformed
+        //        if (txtLogin_pf.isValid()){
+            //            txtLogin_pf.setText(" ");
+            //        }
+        //        else{
+            //            txtLogin_pf.setText("Digite seu login:");
+            //        }
+    }//GEN-LAST:event_txtLogin_pfActionPerformed
+
+    private void checktermsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checktermsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_checktermsActionPerformed
+
     private void sentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sentActionPerformed
-        if (txtLogin_pf.getText().equals("Alexandre") && txtPassword.getText().equals("1234")){
-            JOptionPane.showInputDialog("Por favor, confirme seu acesso com seu CPF.");
+        if (txtLogin_pf.getText().equals("Miguel Nicolelis") && txtPassword.getText().equals("1234")){
+            JOptionPane.showInputDialog("Por favor, confirme seu acesso com seu CNPJ.");
         }
         else{
             JOptionPane.showMessageDialog(rootPane, "Dados não correspondentes aos usuários cadastrados.", "Acesso negado", HEIGHT);
         }
     }//GEN-LAST:event_sentActionPerformed
 
-    private void txtLogin_pfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLogin_pfActionPerformed
-//        if (txtLogin_pf.isValid()){
-//            txtLogin_pf.setText(" ");
-//        }
-//        else{
-//            txtLogin_pf.setText("Digite seu login:");
-//        }
-    }//GEN-LAST:event_txtLogin_pfActionPerformed
-
-    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
+    private void btn_salvar_CadastroPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salvar_CadastroPFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtPasswordActionPerformed
+    }//GEN-LAST:event_btn_salvar_CadastroPFActionPerformed
+
+    private void linkLabelAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_linkLabelAncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_linkLabelAncestorAdded
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
@@ -411,10 +375,6 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
-    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem6ActionPerformed
-
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem11ActionPerformed
@@ -423,13 +383,9 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem12ActionPerformed
 
-    private void btn_salvar_CadastroPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salvar_CadastroPFActionPerformed
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_salvar_CadastroPFActionPerformed
-
-    private void linkLabelAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_linkLabelAncestorAdded
-        // TODO add your handling code here:
-    }//GEN-LAST:event_linkLabelAncestorAdded
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -448,27 +404,20 @@ public class LoginPF_sdi extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LoginPF_sdi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginPJ_sdi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LoginPF_sdi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginPJ_sdi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LoginPF_sdi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginPJ_sdi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LoginPF_sdi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginPJ_sdi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
-        /* Create and display the dialog */
+
+        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                LoginPF_sdi dialog = new LoginPF_sdi(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-                    @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
+                new LoginPJ_sdi().setVisible(true);
             }
         });
     }

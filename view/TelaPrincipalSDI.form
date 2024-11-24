@@ -352,6 +352,9 @@
             <Property name="text" type="java.lang.String" value="Pessoa F&#xed;sica (P.F)"/>
             <Property name="horizontalAlignment" type="int" value="4"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="op_pfActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
           </AuxValues>
