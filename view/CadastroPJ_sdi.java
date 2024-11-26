@@ -36,12 +36,12 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         javax.swing.JButton btn_excluir = new javax.swing.JButton();
         javax.swing.ButtonGroup buttonGroup1 = new javax.swing.ButtonGroup();
         javax.swing.ButtonGroup buttonGroup2 = new javax.swing.ButtonGroup();
-        javax.swing.JPanel jPanel2 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
         javax.swing.JLabel jLabel1 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel2 = new javax.swing.JLabel();
         txtNome_pj = new javax.swing.JTextField();
         javax.swing.JLabel jLabel4 = new javax.swing.JLabel();
-        javax.swing.JSeparator jSeparator1 = new javax.swing.JSeparator();
+        jSeparator1 = new javax.swing.JSeparator();
         javax.swing.JFormattedTextField txtCPF = new javax.swing.JFormattedTextField();
         javax.swing.JLabel jLabel5 = new javax.swing.JLabel();
         txtSenha_pj = new javax.swing.JFormattedTextField();
@@ -144,9 +144,7 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cadastro de Pessoa Jurídica");
-        setMaximumSize(new java.awt.Dimension(32767, 32767));
         setMinimumSize(new java.awt.Dimension(570, 766));
-        setPreferredSize(new java.awt.Dimension(570, 766));
         setResizable(false);
         getContentPane().setLayout(null);
 
@@ -326,13 +324,12 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 560, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(240, 240, 240)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(227, 227, 227)
-                        .addComponent(jLabel1)))
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(37, Short.MAX_VALUE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(240, 240, 240)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -546,6 +543,8 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    javax.swing.JPanel jPanel2;
+    javax.swing.JSeparator jSeparator1;
     javax.swing.JTextField txtNome_pj;
     javax.swing.JFormattedTextField txtSenha_pj;
     // End of variables declaration//GEN-END:variables

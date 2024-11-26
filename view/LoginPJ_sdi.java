@@ -34,7 +34,7 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
         javax.swing.JLabel jLabel1 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel2 = new javax.swing.JLabel();
         txtLogin_pf = new javax.swing.JTextField();
-        checkterms = new javax.swing.JCheckBox();
+        checkbox = new javax.swing.JCheckBox();
         javax.swing.JButton sent = new javax.swing.JButton();
         javax.swing.JSeparator jSeparator1 = new javax.swing.JSeparator();
         javax.swing.JLabel jLabel6 = new javax.swing.JLabel();
@@ -59,7 +59,6 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
         javax.swing.JMenuItem jMenuItem8 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(495, 730));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(19, 20, 39));
@@ -102,12 +101,12 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
             }
         });
 
-        checkterms.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
-        checkterms.setForeground(new java.awt.Color(51, 255, 255));
-        checkterms.setText("Lembrar Login.");
-        checkterms.addActionListener(new java.awt.event.ActionListener() {
+        checkbox.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
+        checkbox.setForeground(new java.awt.Color(51, 255, 255));
+        checkbox.setText("Lembrar Login.");
+        checkbox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checktermsActionPerformed(evt);
+                checkboxActionPerformed(evt);
             }
         });
 
@@ -186,7 +185,7 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
                                 .addComponent(btn_clean, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(96, 96, 96)
                                 .addComponent(sent, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(checkterms))
+                            .addComponent(checkbox))
                         .addContainerGap(72, Short.MAX_VALUE))))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -216,7 +215,7 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(checkterms)
+                .addComponent(checkbox)
                 .addGap(57, 57, 57)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_clean, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -346,9 +345,9 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
             //        }
     }//GEN-LAST:event_txtLogin_pfActionPerformed
 
-    private void checktermsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checktermsActionPerformed
+    private void checkboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkboxActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_checktermsActionPerformed
+    }//GEN-LAST:event_checkboxActionPerformed
 
     private void sentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sentActionPerformed
         if (txtLogin_pf.getText().equals("Miguel Nicolelis") && txtPassword.getText().equals("1234")){
@@ -424,7 +423,7 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     javax.swing.JButton btn_clean;
-    javax.swing.JCheckBox checkterms;
+    javax.swing.JCheckBox checkbox;
     javax.swing.JPanel jPanel1;
     javax.swing.JTextField txtLogin_pf;
     javax.swing.JPasswordField txtPassword;

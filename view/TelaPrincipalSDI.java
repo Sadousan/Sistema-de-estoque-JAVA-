@@ -105,20 +105,22 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Para podermos ajudar da melhor forma possível,");
 
-        jLabel3.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("selecione a opção corrrespondente à sua situação:");
 
+        op_pj.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
         op_pj.setForeground(new java.awt.Color(255, 255, 255));
         op_pj.setText("Pessoa Jurídica(P.J)");
         op_pj.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
 
+        op_pf.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
         op_pf.setForeground(new java.awt.Color(255, 255, 255));
         op_pf.setText("Pessoa Física (P.F)");
         op_pf.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -160,7 +162,7 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
         telamainsdLayout.setVerticalGroup(
             telamainsdLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(telamainsdLayout.createSequentialGroup()
-                .addGap(44, 44, 44)
+                .addGap(132, 132, 132)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -174,7 +176,7 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
                     .addComponent(op_pf))
                 .addGap(39, 39, 39)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(271, Short.MAX_VALUE))
+                .addContainerGap(183, Short.MAX_VALUE))
         );
 
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/loginicon(1).png"))); // NOI18N
