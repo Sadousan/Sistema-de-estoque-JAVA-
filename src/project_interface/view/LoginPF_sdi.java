@@ -41,18 +41,18 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         javax.swing.JPopupMenu jPopupMenu1 = new javax.swing.JPopupMenu();
         javax.swing.JTextField jTextField1 = new javax.swing.JTextField();
         javax.swing.JMenuItem jMenuItem10 = new javax.swing.JMenuItem();
-        jPanel1 = new javax.swing.JPanel();
-        btn_clean = new javax.swing.JButton();
-        txtPassword = new javax.swing.JPasswordField();
+        telaDeAcessoLginPF = new javax.swing.JPanel();
+        btnVoltarLoginPF = new javax.swing.JButton();
+        campSenhaLoginPJ = new javax.swing.JPasswordField();
         javax.swing.JLabel jLabel1 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel2 = new javax.swing.JLabel();
-        txtLogin_pf = new javax.swing.JTextField();
-        checkterms = new javax.swing.JCheckBox();
-        javax.swing.JButton sent = new javax.swing.JButton();
+        campEmailLoginPF = new javax.swing.JTextField();
+        checkBoxLembrarSenhaPF = new javax.swing.JCheckBox();
+        javax.swing.JButton bntEntrarLoginPF = new javax.swing.JButton();
         javax.swing.JSeparator jSeparator1 = new javax.swing.JSeparator();
         javax.swing.JLabel jLabel6 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel5 = new javax.swing.JLabel();
-        javax.swing.JButton btn_salvar_CadastroPF = new javax.swing.JButton();
+        javax.swing.JButton btnEsqueceuSenhaLoginPF = new javax.swing.JButton();
         javax.swing.JLabel linkLabel = new javax.swing.JLabel();
         javax.swing.JMenuBar menu_bar = new javax.swing.JMenuBar();
         javax.swing.JMenu jMenu1 = new javax.swing.JMenu();
@@ -104,28 +104,28 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(19, 20, 39));
-        jPanel1.setToolTipText("");
-        jPanel1.setPreferredSize(new java.awt.Dimension(437, 672));
+        telaDeAcessoLginPF.setBackground(new java.awt.Color(19, 20, 39));
+        telaDeAcessoLginPF.setToolTipText("");
+        telaDeAcessoLginPF.setPreferredSize(new java.awt.Dimension(437, 672));
 
-        btn_clean.setBackground(new java.awt.Color(255, 0, 0));
-        btn_clean.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
-        btn_clean.setForeground(new java.awt.Color(0, 0, 0));
-        btn_clean.setText("Voltar");
-        btn_clean.setMaximumSize(new java.awt.Dimension(125, 25));
-        btn_clean.setMinimumSize(new java.awt.Dimension(125, 25));
-        btn_clean.setPreferredSize(new java.awt.Dimension(125, 30));
-        btn_clean.setSelected(true);
-        btn_clean.addActionListener(new java.awt.event.ActionListener() {
+        btnVoltarLoginPF.setBackground(new java.awt.Color(255, 0, 0));
+        btnVoltarLoginPF.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
+        btnVoltarLoginPF.setForeground(new java.awt.Color(0, 0, 0));
+        btnVoltarLoginPF.setText("Voltar");
+        btnVoltarLoginPF.setMaximumSize(new java.awt.Dimension(125, 25));
+        btnVoltarLoginPF.setMinimumSize(new java.awt.Dimension(125, 25));
+        btnVoltarLoginPF.setPreferredSize(new java.awt.Dimension(125, 30));
+        btnVoltarLoginPF.setSelected(true);
+        btnVoltarLoginPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_cleanActionPerformed(evt);
+                btnVoltarLoginPFActionPerformed(evt);
             }
         });
 
-        txtPassword.setText("*******");
-        txtPassword.addActionListener(new java.awt.event.ActionListener() {
+        campSenhaLoginPJ.setText("*******");
+        campSenhaLoginPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPasswordActionPerformed(evt);
+                campSenhaLoginPJActionPerformed(evt);
             }
         });
 
@@ -137,32 +137,32 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         jLabel2.setForeground(new java.awt.Color(51, 255, 255));
         jLabel2.setText("Login:");
 
-        txtLogin_pf.setText("Digite seu login");
-        txtLogin_pf.addActionListener(new java.awt.event.ActionListener() {
+        campEmailLoginPF.setText("Digite seu login");
+        campEmailLoginPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLogin_pfActionPerformed(evt);
+                campEmailLoginPFActionPerformed(evt);
             }
         });
 
-        checkterms.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
-        checkterms.setForeground(new java.awt.Color(51, 255, 255));
-        checkterms.setText("Lembrar Login.");
-        checkterms.addActionListener(new java.awt.event.ActionListener() {
+        checkBoxLembrarSenhaPF.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
+        checkBoxLembrarSenhaPF.setForeground(new java.awt.Color(51, 255, 255));
+        checkBoxLembrarSenhaPF.setText("Lembrar Login.");
+        checkBoxLembrarSenhaPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checktermsActionPerformed(evt);
+                checkBoxLembrarSenhaPFActionPerformed(evt);
             }
         });
 
-        sent.setBackground(new java.awt.Color(0, 255, 0));
-        sent.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
-        sent.setForeground(new java.awt.Color(0, 0, 0));
-        sent.setText("Enviar");
-        sent.setMaximumSize(new java.awt.Dimension(75, 25));
-        sent.setMinimumSize(new java.awt.Dimension(75, 25));
-        sent.setPreferredSize(new java.awt.Dimension(125, 30));
-        sent.addActionListener(new java.awt.event.ActionListener() {
+        bntEntrarLoginPF.setBackground(new java.awt.Color(0, 255, 0));
+        bntEntrarLoginPF.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
+        bntEntrarLoginPF.setForeground(new java.awt.Color(0, 0, 0));
+        bntEntrarLoginPF.setText("Entrar");
+        bntEntrarLoginPF.setMaximumSize(new java.awt.Dimension(75, 25));
+        bntEntrarLoginPF.setMinimumSize(new java.awt.Dimension(75, 25));
+        bntEntrarLoginPF.setPreferredSize(new java.awt.Dimension(125, 30));
+        bntEntrarLoginPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sentActionPerformed(evt);
+                bntEntrarLoginPFActionPerformed(evt);
             }
         });
 
@@ -177,12 +177,12 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         jLabel5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel5.setMinimumSize(new java.awt.Dimension(66, 25));
 
-        btn_salvar_CadastroPF.setBackground(new java.awt.Color(0, 255, 203));
-        btn_salvar_CadastroPF.setForeground(new java.awt.Color(0, 0, 0));
-        btn_salvar_CadastroPF.setText("Clique aqui!");
-        btn_salvar_CadastroPF.addActionListener(new java.awt.event.ActionListener() {
+        btnEsqueceuSenhaLoginPF.setBackground(new java.awt.Color(0, 255, 203));
+        btnEsqueceuSenhaLoginPF.setForeground(new java.awt.Color(0, 0, 0));
+        btnEsqueceuSenhaLoginPF.setText("Clique aqui!");
+        btnEsqueceuSenhaLoginPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_salvar_CadastroPFActionPerformed(evt);
+                btnEsqueceuSenhaLoginPFActionPerformed(evt);
             }
         });
 
@@ -198,51 +198,51 @@ public class LoginPF_sdi extends javax.swing.JDialog {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout telaDeAcessoLginPFLayout = new javax.swing.GroupLayout(telaDeAcessoLginPF);
+        telaDeAcessoLginPF.setLayout(telaDeAcessoLginPFLayout);
+        telaDeAcessoLginPFLayout.setHorizontalGroup(
+            telaDeAcessoLginPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator1)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaDeAcessoLginPFLayout.createSequentialGroup()
                 .addContainerGap(46, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(telaDeAcessoLginPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(telaDeAcessoLginPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaDeAcessoLginPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                            .addGroup(telaDeAcessoLginPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaDeAcessoLginPFLayout.createSequentialGroup()
                                     .addComponent(linkLabel)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(btn_salvar_CadastroPF)
+                                    .addComponent(btnEsqueceuSenhaLoginPF)
                                     .addGap(78, 78, 78))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                    .addComponent(txtLogin_pf, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaDeAcessoLginPFLayout.createSequentialGroup()
+                                    .addComponent(campEmailLoginPF, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addContainerGap()))
                             .addComponent(jLabel1))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                            .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaDeAcessoLginPFLayout.createSequentialGroup()
+                            .addComponent(campSenhaLoginPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addContainerGap()))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btn_clean, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(telaDeAcessoLginPFLayout.createSequentialGroup()
+                        .addGroup(telaDeAcessoLginPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(telaDeAcessoLginPFLayout.createSequentialGroup()
+                                .addComponent(btnVoltarLoginPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(96, 96, 96)
-                                .addComponent(sent, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(checkterms))
+                                .addComponent(bntEntrarLoginPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(checkBoxLembrarSenhaPF))
                         .addContainerGap(72, Short.MAX_VALUE))))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(telaDeAcessoLginPFLayout.createSequentialGroup()
+                .addGroup(telaDeAcessoLginPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(telaDeAcessoLginPFLayout.createSequentialGroup()
                         .addGap(178, 178, 178)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGroup(telaDeAcessoLginPFLayout.createSequentialGroup()
                         .addGap(151, 151, 151)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        telaDeAcessoLginPFLayout.setVerticalGroup(
+            telaDeAcessoLginPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(telaDeAcessoLginPFLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -252,21 +252,21 @@ public class LoginPF_sdi extends javax.swing.JDialog {
                 .addGap(36, 36, 36)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtLogin_pf, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(campEmailLoginPF, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(13, 13, 13)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(campSenhaLoginPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(checkterms)
+                .addComponent(checkBoxLembrarSenhaPF)
                 .addGap(57, 57, 57)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_clean, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(sent, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(telaDeAcessoLginPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnVoltarLoginPF, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(bntEntrarLoginPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(73, 73, 73)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(telaDeAcessoLginPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(linkLabel)
-                    .addComponent(btn_salvar_CadastroPF))
+                    .addComponent(btnEsqueceuSenhaLoginPF))
                 .addGap(53, 53, 53))
         );
 
@@ -354,53 +354,53 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 464, Short.MAX_VALUE)
+            .addComponent(telaDeAcessoLginPF, javax.swing.GroupLayout.DEFAULT_SIZE, 464, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE)
+            .addComponent(telaDeAcessoLginPF, javax.swing.GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE)
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void checktermsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checktermsActionPerformed
+    private void checkBoxLembrarSenhaPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkBoxLembrarSenhaPFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_checktermsActionPerformed
+    }//GEN-LAST:event_checkBoxLembrarSenhaPFActionPerformed
 
-    private void btn_cleanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cleanActionPerformed
+    private void btnVoltarLoginPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarLoginPFActionPerformed
         
         int resposta = JOptionPane.showConfirmDialog(rootPane, "Deseja realmente excluir?", "Verificação", JOptionPane.YES_NO_OPTION); 
         if (resposta==JOptionPane.YES_OPTION){
-            txtLogin_pf.setText(" ");
-            txtPassword.setText(" ");
+            campEmailLoginPF.setText(" ");
+            campSenhaLoginPJ.setText(" ");
         }
         
         
-    }//GEN-LAST:event_btn_cleanActionPerformed
+    }//GEN-LAST:event_btnVoltarLoginPFActionPerformed
 
-    private void sentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sentActionPerformed
-        if (txtLogin_pf.getText().equals("Alexandre") && txtPassword.getText().equals("1234")){
+    private void bntEntrarLoginPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntEntrarLoginPFActionPerformed
+        if (campEmailLoginPF.getText().equals("Alexandre") && campSenhaLoginPJ.getText().equals("1234")){
             JOptionPane.showInputDialog("Por favor, confirme seu acesso com seu CPF.");
         }
         else{
             JOptionPane.showMessageDialog(rootPane, "Dados não correspondentes aos usuários cadastrados.", "Acesso negado", HEIGHT);
         }
-    }//GEN-LAST:event_sentActionPerformed
+    }//GEN-LAST:event_bntEntrarLoginPFActionPerformed
 
-    private void txtLogin_pfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLogin_pfActionPerformed
+    private void campEmailLoginPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campEmailLoginPFActionPerformed
 //        if (txtLogin_pf.isValid()){
 //            txtLogin_pf.setText(" ");
 //        }
 //        else{
 //            txtLogin_pf.setText("Digite seu login:");
 //        }
-    }//GEN-LAST:event_txtLogin_pfActionPerformed
+    }//GEN-LAST:event_campEmailLoginPFActionPerformed
 
-    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
+    private void campSenhaLoginPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campSenhaLoginPJActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtPasswordActionPerformed
+    }//GEN-LAST:event_campSenhaLoginPJActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
@@ -422,9 +422,9 @@ public class LoginPF_sdi extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem12ActionPerformed
 
-    private void btn_salvar_CadastroPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salvar_CadastroPFActionPerformed
+    private void btnEsqueceuSenhaLoginPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEsqueceuSenhaLoginPFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_salvar_CadastroPFActionPerformed
+    }//GEN-LAST:event_btnEsqueceuSenhaLoginPFActionPerformed
 
     private void linkLabelAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_linkLabelAncestorAdded
         // TODO add your handling code here:
@@ -473,10 +473,10 @@ public class LoginPF_sdi extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    javax.swing.JButton btn_clean;
-    javax.swing.JCheckBox checkterms;
-    javax.swing.JPanel jPanel1;
-    javax.swing.JTextField txtLogin_pf;
-    javax.swing.JPasswordField txtPassword;
+    javax.swing.JButton btnVoltarLoginPF;
+    javax.swing.JTextField campEmailLoginPF;
+    javax.swing.JPasswordField campSenhaLoginPJ;
+    javax.swing.JCheckBox checkBoxLembrarSenhaPF;
+    javax.swing.JPanel telaDeAcessoLginPF;
     // End of variables declaration//GEN-END:variables
 }

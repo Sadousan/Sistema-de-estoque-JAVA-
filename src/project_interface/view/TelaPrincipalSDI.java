@@ -35,11 +35,10 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
         telamainsd = new javax.swing.JDesktopPane();
         javax.swing.JLabel jLabel1 = new javax.swing.JLabel();
         javax.swing.JSeparator jSeparator2 = new javax.swing.JSeparator();
-        javax.swing.JButton jButton1 = new javax.swing.JButton();
+        javax.swing.JButton submeter = new javax.swing.JButton();
         javax.swing.JLabel jLabel2 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel3 = new javax.swing.JLabel();
-        op_pj = new javax.swing.JRadioButton();
-        op_pf = new javax.swing.JRadioButton();
+        selecionar_pessoa = new javax.swing.JComboBox<>();
         javax.swing.JMenuBar jMenuBar1 = new javax.swing.JMenuBar();
         javax.swing.JMenu jMenu1 = new javax.swing.JMenu();
         javax.swing.JMenuItem fazer_cadastro = new javax.swing.JMenuItem();
@@ -96,12 +95,12 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Seja bem vindo(a)!");
 
-        jButton1.setBackground(new java.awt.Color(0, 153, 153));
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Submeter");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        submeter.setBackground(new java.awt.Color(0, 153, 153));
+        submeter.setForeground(new java.awt.Color(0, 0, 0));
+        submeter.setText("Submeter");
+        submeter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                submeterActionPerformed(evt);
             }
         });
 
@@ -115,49 +114,42 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("selecione a opção corrrespondente à sua situação:");
 
-        op_pj.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
-        op_pj.setForeground(new java.awt.Color(255, 255, 255));
-        op_pj.setText("Pessoa Jurídica(P.J)");
-        op_pj.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-
-        op_pf.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
-        op_pf.setForeground(new java.awt.Color(255, 255, 255));
-        op_pf.setText("Pessoa Física (P.F)");
-        op_pf.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        op_pf.addActionListener(new java.awt.event.ActionListener() {
+        selecionar_pessoa.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione a opção:", "Pessoa Física", "Pessoa Jurídica"}));
+        selecionar_pessoa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                op_pfActionPerformed(evt);
+                selecionar_pessoaActionPerformed(evt);
             }
         });
 
         telamainsd.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         telamainsd.setLayer(jSeparator2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        telamainsd.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        telamainsd.setLayer(submeter, javax.swing.JLayeredPane.DEFAULT_LAYER);
         telamainsd.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
         telamainsd.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        telamainsd.setLayer(op_pj, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        telamainsd.setLayer(op_pf, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        telamainsd.setLayer(selecionar_pessoa, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout telamainsdLayout = new javax.swing.GroupLayout(telamainsd);
         telamainsd.setLayout(telamainsdLayout);
         telamainsdLayout.setHorizontalGroup(
             telamainsdLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(telamainsdLayout.createSequentialGroup()
-                .addGap(389, 389, 389)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(telamainsdLayout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(telamainsdLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jSeparator2)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telamainsdLayout.createSequentialGroup()
-                        .addComponent(op_pf, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
-                        .addComponent(op_pj, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(telamainsdLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(telamainsdLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jSeparator2)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(telamainsdLayout.createSequentialGroup()
+                        .addGap(389, 389, 389)
+                        .addComponent(submeter, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telamainsdLayout.createSequentialGroup()
+                .addGap(0, 371, Short.MAX_VALUE)
+                .addComponent(selecionar_pessoa, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(363, 363, 363))
         );
         telamainsdLayout.setVerticalGroup(
             telamainsdLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -170,12 +162,10 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(telamainsdLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(op_pj)
-                    .addComponent(op_pf))
-                .addGap(39, 39, 39)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(selecionar_pessoa, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(submeter, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(183, Short.MAX_VALUE))
         );
 
@@ -321,23 +311,21 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(op_pf.equals(true)){
-            JOptionPane.showMessageDialog(rootPane, "Carregando acesso de pessoa física...");
+    private void submeterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submeterActionPerformed
+        if(selecionar_pessoa.getSelectedItem().equals("Pessoa Física")){
+            JOptionPane.showMessageDialog(rootPane, "Carregando acesso de pessoa física");
         }
-        else if(op_pf.equals(false) && op_pj.equals(true)){
-            JOptionPane.showMessageDialog(rootPane, "Carregando acesso de pessoa jurídica...");
+        else if(selecionar_pessoa.getSelectedItem().equals("Pessoa Jurídica")){
+            JOptionPane.showMessageDialog(rootPane, "Carregando acesso de pessoa jurídica");
         }
         else{
-            JOptionPane.showMessageDialog(rootPane, "Ocorreu um erro! revise o espaço selecionado.", "Opções selecionadas simultaneamente ou em branco.", HEIGHT);
+                JOptionPane.showMessageDialog(rootPane, "Ocorreu um erro! revise a opção selecionada.", "Opção inválida.", HEIGHT);
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_submeterActionPerformed
 
-    private void op_pfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_op_pfActionPerformed
-        if (op_pf.isValid()){
-            op_pj.setText(" ");
-        }
-    }//GEN-LAST:event_op_pfActionPerformed
+    private void selecionar_pessoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selecionar_pessoaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_selecionar_pessoaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -372,11 +360,19 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
                 new TelaPrincipalSDI().setVisible(true);
             }
         });
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    javax.swing.JRadioButton op_pf;
-    javax.swing.JRadioButton op_pj;
+    javax.swing.JComboBox<String> selecionar_pessoa;
     javax.swing.JDesktopPane telamainsd;
     // End of variables declaration//GEN-END:variables
+
+    private static class selecionar_pessoa {
+
+        private static Object getSelectedItem() {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
+    }
 }

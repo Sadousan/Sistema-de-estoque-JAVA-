@@ -36,15 +36,15 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         javax.swing.JButton btn_excluir = new javax.swing.JButton();
         javax.swing.ButtonGroup buttonGroup1 = new javax.swing.ButtonGroup();
         javax.swing.ButtonGroup buttonGroup2 = new javax.swing.ButtonGroup();
-        jPanel2 = new javax.swing.JPanel();
+        telaCadastroPJ = new javax.swing.JPanel();
         javax.swing.JLabel jLabel1 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel2 = new javax.swing.JLabel();
-        txtNome_pj = new javax.swing.JTextField();
+        CampNomeEmpreCadasPJ = new javax.swing.JTextField();
         javax.swing.JLabel jLabel4 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        javax.swing.JFormattedTextField txtCPF = new javax.swing.JFormattedTextField();
+        javax.swing.JFormattedTextField campCNPJCadasPJ = new javax.swing.JFormattedTextField();
         javax.swing.JLabel jLabel5 = new javax.swing.JLabel();
-        txtSenha_pj = new javax.swing.JFormattedTextField();
+        campSenhaCadasPJ = new javax.swing.JFormattedTextField();
         javax.swing.JLabel jLabel6 = new javax.swing.JLabel();
         javax.swing.JPanel jPanel3 = new javax.swing.JPanel();
         javax.swing.JLabel jLabel7 = new javax.swing.JLabel();
@@ -52,30 +52,30 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         javax.swing.JLabel jLabel9 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel10 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel11 = new javax.swing.JLabel();
-        javax.swing.JFormattedTextField jFormattedTextField1 = new javax.swing.JFormattedTextField();
-        javax.swing.JTextField jTextField2 = new javax.swing.JTextField();
-        javax.swing.JTextField jTextField3 = new javax.swing.JTextField();
-        javax.swing.JTextField jTextField4 = new javax.swing.JTextField();
-        javax.swing.JTextField jTextField5 = new javax.swing.JTextField();
-        javax.swing.JButton btn_excluir1 = new javax.swing.JButton();
-        javax.swing.JButton btn_salvar_CadastroPF1 = new javax.swing.JButton();
-        javax.swing.JButton btn_enviar_CadastroPF1 = new javax.swing.JButton();
+        javax.swing.JFormattedTextField campCEPCadasPJ = new javax.swing.JFormattedTextField();
+        javax.swing.JTextField campRuaCadasPJ = new javax.swing.JTextField();
+        javax.swing.JTextField campBairroCadasPJ = new javax.swing.JTextField();
+        javax.swing.JTextField campNumeRuaCadasPJ = new javax.swing.JTextField();
+        javax.swing.JTextField campUFCadasPJ = new javax.swing.JTextField();
+        javax.swing.JButton btnVoltarCadasPJ = new javax.swing.JButton();
+        javax.swing.JButton bntSalvarCadasPJ = new javax.swing.JButton();
+        javax.swing.JButton bntEntrarCadasPJ = new javax.swing.JButton();
         javax.swing.JMenuBar jMenuBar1 = new javax.swing.JMenuBar();
-        javax.swing.JMenu jMenu1 = new javax.swing.JMenu();
-        javax.swing.JMenuItem jMenuItem1 = new javax.swing.JMenuItem();
-        javax.swing.JMenuItem jMenuItem9 = new javax.swing.JMenuItem();
-        javax.swing.JMenuItem jMenuItem2 = new javax.swing.JMenuItem();
-        javax.swing.JMenu jMenu5 = new javax.swing.JMenu();
-        javax.swing.JMenuItem jMenuItem11 = new javax.swing.JMenuItem();
-        javax.swing.JMenuItem jMenuItem12 = new javax.swing.JMenuItem();
-        javax.swing.JMenu jMenu2 = new javax.swing.JMenu();
-        javax.swing.JMenuItem jMenuItem3 = new javax.swing.JMenuItem();
-        javax.swing.JMenuItem jMenuItem4 = new javax.swing.JMenuItem();
-        javax.swing.JMenuItem jMenuItem5 = new javax.swing.JMenuItem();
-        javax.swing.JMenu jMenu4 = new javax.swing.JMenu();
-        javax.swing.JMenuItem jMenuItem6 = new javax.swing.JMenuItem();
-        javax.swing.JMenuItem jMenuItem7 = new javax.swing.JMenuItem();
-        javax.swing.JMenuItem jMenuItem8 = new javax.swing.JMenuItem();
+        javax.swing.JMenu botaoMenuUsuario = new javax.swing.JMenu();
+        javax.swing.JMenuItem botaoMenuCadastreSeUsuarioPF = new javax.swing.JMenuItem();
+        javax.swing.JMenuItem botaoMenuEsqueUsuarioSenhaPF = new javax.swing.JMenuItem();
+        javax.swing.JMenuItem botaoUsuarioMenuSairPF = new javax.swing.JMenuItem();
+        javax.swing.JMenu botaoMenuCadastreSePJ = new javax.swing.JMenu();
+        javax.swing.JMenuItem botaoMenuLoginPJ = new javax.swing.JMenuItem();
+        javax.swing.JMenuItem botaoMenuCadrasteSePJ = new javax.swing.JMenuItem();
+        javax.swing.JMenu botaoMenuContato = new javax.swing.JMenu();
+        javax.swing.JMenuItem BotaoMenuTelefoneContato = new javax.swing.JMenuItem();
+        javax.swing.JMenuItem botaoMenuWhatsContato = new javax.swing.JMenuItem();
+        javax.swing.JMenuItem botaoMenuEmailContato = new javax.swing.JMenuItem();
+        javax.swing.JMenu botaoMenuSobre = new javax.swing.JMenu();
+        javax.swing.JMenuItem botaoMenuAtualiSobre = new javax.swing.JMenuItem();
+        javax.swing.JMenuItem botaoMenuDescontoSobre = new javax.swing.JMenuItem();
+        javax.swing.JMenuItem botaoMenuNovasIntegSobre = new javax.swing.JMenuItem();
 
         jTextField1.setText("jTextField1");
 
@@ -148,9 +148,9 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(null);
 
-        jPanel2.setBackground(new java.awt.Color(19, 20, 39));
-        jPanel2.setToolTipText("");
-        jPanel2.setMinimumSize(new java.awt.Dimension(603, 766));
+        telaCadastroPJ.setBackground(new java.awt.Color(19, 20, 39));
+        telaCadastroPJ.setToolTipText("");
+        telaCadastroPJ.setMinimumSize(new java.awt.Dimension(603, 766));
 
         jLabel1.setBackground(new java.awt.Color(51, 255, 255));
         jLabel1.setFont(new java.awt.Font("Cantarell", 0, 24)); // NOI18N
@@ -163,9 +163,9 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(51, 255, 255));
         jLabel2.setText("Nome da Empresa:");
 
-        txtNome_pj.addActionListener(new java.awt.event.ActionListener() {
+        CampNomeEmpreCadasPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNome_pjActionPerformed(evt);
+                CampNomeEmpreCadasPJActionPerformed(evt);
             }
         });
 
@@ -173,10 +173,10 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(51, 255, 255));
         jLabel4.setText("CNPJ:");
 
-        txtCPF.setText("jFormattedTextField1");
-        txtCPF.addActionListener(new java.awt.event.ActionListener() {
+        campCNPJCadasPJ.setText("Informe o CNPJ");
+        campCNPJCadasPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCPFActionPerformed(evt);
+                campCNPJCadasPJActionPerformed(evt);
             }
         });
 
@@ -184,10 +184,10 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(51, 255, 255));
         jLabel5.setText("Senha:");
 
-        txtSenha_pj.setText("jFormattedTextField1");
-        txtSenha_pj.addActionListener(new java.awt.event.ActionListener() {
+        campSenhaCadasPJ.setText("Informe a senha");
+        campSenhaCadasPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtSenha_pjActionPerformed(evt);
+                campSenhaCadasPJActionPerformed(evt);
             }
         });
 
@@ -217,9 +217,15 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         jLabel11.setForeground(new java.awt.Color(51, 255, 255));
         jLabel11.setText("Nº:");
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        campRuaCadasPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                campRuaCadasPJActionPerformed(evt);
+            }
+        });
+
+        campUFCadasPJ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campUFCadasPJActionPerformed(evt);
             }
         });
 
@@ -233,25 +239,25 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(campUFCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(51, 51, 51)
                         .addComponent(jLabel11)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(campNumeRuaCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jFormattedTextField1)))
+                        .addComponent(campCEPCadasPJ)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel10)
                         .addGap(22, 22, 22)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(campRuaCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(campBairroCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(17, 17, 17))
         );
         jPanel3Layout.setVerticalGroup(
@@ -261,79 +267,79 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(jLabel8)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(campBairroCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(campCEPCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(49, 49, 49)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(campRuaCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel10)
-                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(campNumeRuaCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel11)
                         .addComponent(jLabel9)
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(campUFCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
-        btn_excluir1.setBackground(new java.awt.Color(204, 0, 0));
-        btn_excluir1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_excluir1.setText("Voltar");
-        btn_excluir1.addActionListener(new java.awt.event.ActionListener() {
+        btnVoltarCadasPJ.setBackground(new java.awt.Color(204, 0, 0));
+        btnVoltarCadasPJ.setForeground(new java.awt.Color(0, 0, 0));
+        btnVoltarCadasPJ.setText("Voltar");
+        btnVoltarCadasPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_excluir1ActionPerformed(evt);
+                btnVoltarCadasPJActionPerformed(evt);
             }
         });
 
-        btn_salvar_CadastroPF1.setBackground(new java.awt.Color(0, 255, 204));
-        btn_salvar_CadastroPF1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_salvar_CadastroPF1.setText("Salvar");
-        btn_salvar_CadastroPF1.addActionListener(new java.awt.event.ActionListener() {
+        bntSalvarCadasPJ.setBackground(new java.awt.Color(0, 255, 204));
+        bntSalvarCadasPJ.setForeground(new java.awt.Color(0, 0, 0));
+        bntSalvarCadasPJ.setText("Salvar");
+        bntSalvarCadasPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_salvar_CadastroPF1ActionPerformed(evt);
+                bntSalvarCadasPJActionPerformed(evt);
             }
         });
 
-        btn_enviar_CadastroPF1.setBackground(new java.awt.Color(0, 255, 51));
-        btn_enviar_CadastroPF1.setForeground(new java.awt.Color(0, 0, 0));
-        btn_enviar_CadastroPF1.setText("Enviar");
+        bntEntrarCadasPJ.setBackground(new java.awt.Color(0, 255, 51));
+        bntEntrarCadasPJ.setForeground(new java.awt.Color(0, 0, 0));
+        bntEntrarCadasPJ.setText("Entrar");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout telaCadastroPJLayout = new javax.swing.GroupLayout(telaCadastroPJ);
+        telaCadastroPJ.setLayout(telaCadastroPJLayout);
+        telaCadastroPJLayout.setHorizontalGroup(
+            telaCadastroPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(telaCadastroPJLayout.createSequentialGroup()
+                .addGroup(telaCadastroPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(telaCadastroPJLayout.createSequentialGroup()
                         .addGap(34, 34, 34)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(telaCadastroPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(telaCadastroPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(jLabel4)
                                 .addComponent(jLabel5)
                                 .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(txtSenha_pj)
-                                .addComponent(txtCPF)
-                                .addComponent(txtNome_pj, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                    .addComponent(btn_excluir1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(campSenhaCadasPJ)
+                                .addComponent(campCNPJCadasPJ)
+                                .addComponent(CampNomeEmpreCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaCadastroPJLayout.createSequentialGroup()
+                                    .addComponent(btnVoltarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(59, 59, 59)
-                                    .addComponent(btn_salvar_CadastroPF1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(bntSalvarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btn_enviar_CadastroPF1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addComponent(bntEntrarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(telaCadastroPJLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 560, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGroup(telaCadastroPJLayout.createSequentialGroup()
                         .addGap(240, 240, 240)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGroup(telaCadastroPJLayout.createSequentialGroup()
                         .addGap(227, 227, 227)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(37, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        telaCadastroPJLayout.setVerticalGroup(
+            telaCadastroPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(telaCadastroPJLayout.createSequentialGroup()
                 .addGap(43, 43, 43)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -343,105 +349,105 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtNome_pj, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(CampNomeEmpreCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(campCNPJCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel5)
                 .addGap(12, 12, 12)
-                .addComponent(txtSenha_pj, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(campSenhaCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_enviar_CadastroPF1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_salvar_CadastroPF1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_excluir1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(telaCadastroPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bntEntrarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bntSalvarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnVoltarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(70, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel2);
-        jPanel2.setBounds(0, -30, 570, 760);
+        getContentPane().add(telaCadastroPJ);
+        telaCadastroPJ.setBounds(0, -30, 570, 760);
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/loginicon(1).png"))); // NOI18N
-        jMenu1.setText("Usuário");
+        botaoMenuUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/loginicon(1).png"))); // NOI18N
+        botaoMenuUsuario.setText("Usuário");
 
-        jMenuItem1.setText("Cadastre-se");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        botaoMenuCadastreSeUsuarioPF.setText("Cadastre-se");
+        botaoMenuCadastreSeUsuarioPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                botaoMenuCadastreSeUsuarioPFActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        botaoMenuUsuario.add(botaoMenuCadastreSeUsuarioPF);
 
-        jMenuItem9.setText("Esqueci minha senha");
-        jMenu1.add(jMenuItem9);
+        botaoMenuEsqueUsuarioSenhaPF.setText("Esqueci minha senha");
+        botaoMenuUsuario.add(botaoMenuEsqueUsuarioSenhaPF);
 
-        jMenuItem2.setText("Sair");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        botaoUsuarioMenuSairPF.setText("Sair");
+        botaoUsuarioMenuSairPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                botaoUsuarioMenuSairPFActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem2);
+        botaoMenuUsuario.add(botaoUsuarioMenuSairPF);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(botaoMenuUsuario);
 
-        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/P.J.png"))); // NOI18N
-        jMenu5.setText("Pessoa Jurídica");
+        botaoMenuCadastreSePJ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/P.J.png"))); // NOI18N
+        botaoMenuCadastreSePJ.setText("Pessoa Jurídica");
 
-        jMenuItem11.setText("Cadastre-se");
-        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
+        botaoMenuLoginPJ.setText("Login");
+        botaoMenuLoginPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem11ActionPerformed(evt);
+                botaoMenuLoginPJActionPerformed(evt);
             }
         });
-        jMenu5.add(jMenuItem11);
+        botaoMenuCadastreSePJ.add(botaoMenuLoginPJ);
 
-        jMenuItem12.setText("Login");
-        jMenuItem12.addActionListener(new java.awt.event.ActionListener() {
+        botaoMenuCadrasteSePJ.setText("Cadastre-se");
+        botaoMenuCadrasteSePJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem12ActionPerformed(evt);
+                botaoMenuCadrasteSePJActionPerformed(evt);
             }
         });
-        jMenu5.add(jMenuItem12);
+        botaoMenuCadastreSePJ.add(botaoMenuCadrasteSePJ);
 
-        jMenuBar1.add(jMenu5);
+        jMenuBar1.add(botaoMenuCadastreSePJ);
 
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/contact(1).png"))); // NOI18N
-        jMenu2.setText("Contato");
+        botaoMenuContato.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/contact(1).png"))); // NOI18N
+        botaoMenuContato.setText("Contato");
 
-        jMenuItem3.setText("Telefone");
-        jMenu2.add(jMenuItem3);
+        BotaoMenuTelefoneContato.setText("Telefone");
+        botaoMenuContato.add(BotaoMenuTelefoneContato);
 
-        jMenuItem4.setText("WhatsApp");
-        jMenu2.add(jMenuItem4);
+        botaoMenuWhatsContato.setText("WhatsApp");
+        botaoMenuContato.add(botaoMenuWhatsContato);
 
-        jMenuItem5.setText("Email");
-        jMenu2.add(jMenuItem5);
+        botaoMenuEmailContato.setText("Email");
+        botaoMenuContato.add(botaoMenuEmailContato);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(botaoMenuContato);
 
-        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/sobreicon.png"))); // NOI18N
-        jMenu4.setText("Sobre");
+        botaoMenuSobre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/sobreicon.png"))); // NOI18N
+        botaoMenuSobre.setText("Sobre");
 
-        jMenuItem6.setText("Atualizações");
-        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+        botaoMenuAtualiSobre.setText("Atualizações");
+        botaoMenuAtualiSobre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem6ActionPerformed(evt);
+                botaoMenuAtualiSobreActionPerformed(evt);
             }
         });
-        jMenu4.add(jMenuItem6);
+        botaoMenuSobre.add(botaoMenuAtualiSobre);
 
-        jMenuItem7.setText("Descontos");
-        jMenu4.add(jMenuItem7);
+        botaoMenuDescontoSobre.setText("Descontos");
+        botaoMenuSobre.add(botaoMenuDescontoSobre);
 
-        jMenuItem8.setText("Novas integrações");
-        jMenu4.add(jMenuItem8);
+        botaoMenuNovasIntegSobre.setText("Novas integrações");
+        botaoMenuSobre.add(botaoMenuNovasIntegSobre);
 
-        jMenuBar1.add(jMenu4);
+        jMenuBar1.add(botaoMenuSobre);
 
         setJMenuBar(jMenuBar1);
 
@@ -459,53 +465,57 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btn_excluirActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void botaoMenuCadastreSeUsuarioPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoMenuCadastreSeUsuarioPFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_botaoMenuCadastreSeUsuarioPFActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void botaoUsuarioMenuSairPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoUsuarioMenuSairPFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    }//GEN-LAST:event_botaoUsuarioMenuSairPFActionPerformed
 
-    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+    private void botaoMenuCadrasteSePJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoMenuCadrasteSePJActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem11ActionPerformed
+    }//GEN-LAST:event_botaoMenuCadrasteSePJActionPerformed
 
-    private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
+    private void botaoMenuLoginPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoMenuLoginPJActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem12ActionPerformed
+    }//GEN-LAST:event_botaoMenuLoginPJActionPerformed
 
-    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+    private void botaoMenuAtualiSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoMenuAtualiSobreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem6ActionPerformed
+    }//GEN-LAST:event_botaoMenuAtualiSobreActionPerformed
 
-    private void btn_salvar_CadastroPF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salvar_CadastroPF1ActionPerformed
+    private void bntSalvarCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntSalvarCadasPJActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_salvar_CadastroPF1ActionPerformed
+    }//GEN-LAST:event_bntSalvarCadasPJActionPerformed
 
-    private void btn_excluir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_excluir1ActionPerformed
+    private void btnVoltarCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarCadasPJActionPerformed
         int resposta = JOptionPane.showConfirmDialog(rootPane, "Deseja realmente excluir?", "Verificação", JOptionPane.YES_NO_OPTION);
         if (resposta==JOptionPane.YES_OPTION){
-            txtNome_pj.setText(" ");
-            txtSenha_pj.setText(" ");
+            CampNomeEmpreCadasPJ.setText(" ");
+            campSenhaCadasPJ.setText(" ");
         }
-    }//GEN-LAST:event_btn_excluir1ActionPerformed
+    }//GEN-LAST:event_btnVoltarCadasPJActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void campRuaCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campRuaCadasPJActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_campRuaCadasPJActionPerformed
 
-    private void txtSenha_pjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSenha_pjActionPerformed
+    private void campSenhaCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campSenhaCadasPJActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtSenha_pjActionPerformed
+    }//GEN-LAST:event_campSenhaCadasPJActionPerformed
 
-    private void txtCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCPFActionPerformed
+    private void campCNPJCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campCNPJCadasPJActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtCPFActionPerformed
+    }//GEN-LAST:event_campCNPJCadasPJActionPerformed
 
-    private void txtNome_pjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNome_pjActionPerformed
+    private void CampNomeEmpreCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampNomeEmpreCadasPJActionPerformed
 
-    }//GEN-LAST:event_txtNome_pjActionPerformed
+    }//GEN-LAST:event_CampNomeEmpreCadasPJActionPerformed
+
+    private void campUFCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campUFCadasPJActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campUFCadasPJActionPerformed
 
     /**
      * @param args the command line arguments
@@ -543,9 +553,9 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    javax.swing.JPanel jPanel2;
+    javax.swing.JTextField CampNomeEmpreCadasPJ;
+    javax.swing.JFormattedTextField campSenhaCadasPJ;
     javax.swing.JSeparator jSeparator1;
-    javax.swing.JTextField txtNome_pj;
-    javax.swing.JFormattedTextField txtSenha_pj;
+    javax.swing.JPanel telaCadastroPJ;
     // End of variables declaration//GEN-END:variables
 }

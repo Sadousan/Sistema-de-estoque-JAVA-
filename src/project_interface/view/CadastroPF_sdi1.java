@@ -29,34 +29,34 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
     private void initComponents() {
 
         javax.swing.JPanel jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        telaDeCadastroPF = new javax.swing.JPanel();
         javax.swing.JLabel jLabel1 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel2 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel3 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel4 = new javax.swing.JLabel();
-        txtSenha = new javax.swing.JPasswordField();
+        CampCadasSenhaPF = new javax.swing.JPasswordField();
         jSeparator1 = new javax.swing.JSeparator();
-        javax.swing.JButton btn_enviar_CadastroPF = new javax.swing.JButton();
-        javax.swing.JButton btn_salvar_CadastroPF = new javax.swing.JButton();
-        javax.swing.JButton btn_excluir = new javax.swing.JButton();
-        javax.swing.JFormattedTextField txtCPF = new javax.swing.JFormattedTextField();
+        javax.swing.JButton btnEntrarCadasPF = new javax.swing.JButton();
+        javax.swing.JButton btnSalvaCadasPF = new javax.swing.JButton();
+        javax.swing.JButton btnVoltarCadasPF = new javax.swing.JButton();
+        javax.swing.JFormattedTextField CampCPFCadasPF = new javax.swing.JFormattedTextField();
         javax.swing.JLabel jLabel5 = new javax.swing.JLabel();
-        javax.swing.JFormattedTextField txtCPF1 = new javax.swing.JFormattedTextField();
+        javax.swing.JFormattedTextField CampEmailCadasPF = new javax.swing.JFormattedTextField();
         javax.swing.JLabel jLabel7 = new javax.swing.JLabel();
-        options_genero = new javax.swing.JComboBox<>();
+        MenuSexoCadasPF = new javax.swing.JComboBox<>();
         javax.swing.JLabel jLabel6 = new javax.swing.JLabel();
-        txtNome_pj = new javax.swing.JTextField();
+        compNomeComCadasPF = new javax.swing.JTextField();
         javax.swing.JMenuBar jMenuBar1 = new javax.swing.JMenuBar();
-        javax.swing.JMenu jMenu1 = new javax.swing.JMenu();
-        javax.swing.JMenuItem jMenuItem1 = new javax.swing.JMenuItem();
-        javax.swing.JMenuItem jMenuItem9 = new javax.swing.JMenuItem();
+        javax.swing.JMenu MenoUsuario = new javax.swing.JMenu();
+        javax.swing.JMenuItem botaoMenuCadastreSeUsuarioPF = new javax.swing.JMenuItem();
+        javax.swing.JMenuItem botaoMenuEsqueUsuarioSenhaPF = new javax.swing.JMenuItem();
         javax.swing.JMenuItem jMenuItem2 = new javax.swing.JMenuItem();
-        javax.swing.JMenu jMenu5 = new javax.swing.JMenu();
-        javax.swing.JMenuItem jMenuItem11 = new javax.swing.JMenuItem();
-        javax.swing.JMenuItem jMenuItem12 = new javax.swing.JMenuItem();
-        javax.swing.JMenu jMenu2 = new javax.swing.JMenu();
-        javax.swing.JMenuItem jMenuItem3 = new javax.swing.JMenuItem();
-        javax.swing.JMenuItem jMenuItem4 = new javax.swing.JMenuItem();
+        javax.swing.JMenu botaoMenuCadastreSePJ = new javax.swing.JMenu();
+        javax.swing.JMenuItem botaoMenuCadrasteSePJ = new javax.swing.JMenuItem();
+        javax.swing.JMenuItem botaoMenuLoginSePJ = new javax.swing.JMenuItem();
+        javax.swing.JMenu botaoMenuTelefoneSePJ = new javax.swing.JMenu();
+        javax.swing.JMenuItem botaoMenuTelefonePJ = new javax.swing.JMenuItem();
+        javax.swing.JMenuItem botaoMenuWhatsappPJ = new javax.swing.JMenuItem();
         javax.swing.JMenuItem jMenuItem5 = new javax.swing.JMenuItem();
         javax.swing.JMenu jMenu4 = new javax.swing.JMenu();
         javax.swing.JMenuItem jMenuItem6 = new javax.swing.JMenuItem();
@@ -65,7 +65,6 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("CadastroSDI");
-        setPreferredSize(new java.awt.Dimension(584, 726));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -82,8 +81,8 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 746, -1, -1));
 
-        jPanel2.setBackground(new java.awt.Color(19, 20, 39));
-        jPanel2.setToolTipText("");
+        telaDeCadastroPF.setBackground(new java.awt.Color(19, 20, 39));
+        telaDeCadastroPF.setToolTipText("");
 
         jLabel1.setBackground(new java.awt.Color(51, 255, 255));
         jLabel1.setFont(new java.awt.Font("Cantarell", 0, 24)); // NOI18N
@@ -104,34 +103,34 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(51, 255, 255));
         jLabel4.setText("CPF:");
 
-        txtSenha.setText("jPasswordField1");
+        CampCadasSenhaPF.setText("jPasswordField1");
 
-        btn_enviar_CadastroPF.setBackground(new java.awt.Color(0, 255, 51));
-        btn_enviar_CadastroPF.setForeground(new java.awt.Color(0, 0, 0));
-        btn_enviar_CadastroPF.setText("Enviar");
+        btnEntrarCadasPF.setBackground(new java.awt.Color(0, 255, 51));
+        btnEntrarCadasPF.setForeground(new java.awt.Color(0, 0, 0));
+        btnEntrarCadasPF.setText("Entrar");
 
-        btn_salvar_CadastroPF.setBackground(new java.awt.Color(0, 255, 204));
-        btn_salvar_CadastroPF.setForeground(new java.awt.Color(0, 0, 0));
-        btn_salvar_CadastroPF.setText("Salvar");
-        btn_salvar_CadastroPF.addActionListener(new java.awt.event.ActionListener() {
+        btnSalvaCadasPF.setBackground(new java.awt.Color(0, 255, 204));
+        btnSalvaCadasPF.setForeground(new java.awt.Color(0, 0, 0));
+        btnSalvaCadasPF.setText("Salvar");
+        btnSalvaCadasPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_salvar_CadastroPFActionPerformed(evt);
+                btnSalvaCadasPFActionPerformed(evt);
             }
         });
 
-        btn_excluir.setBackground(new java.awt.Color(204, 0, 0));
-        btn_excluir.setForeground(new java.awt.Color(0, 0, 0));
-        btn_excluir.setText("Voltar");
-        btn_excluir.addActionListener(new java.awt.event.ActionListener() {
+        btnVoltarCadasPF.setBackground(new java.awt.Color(204, 0, 0));
+        btnVoltarCadasPF.setForeground(new java.awt.Color(0, 0, 0));
+        btnVoltarCadasPF.setText("Voltar");
+        btnVoltarCadasPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_excluirActionPerformed(evt);
+                btnVoltarCadasPFActionPerformed(evt);
             }
         });
 
-        txtCPF.setText("jFormattedTextField1");
-        txtCPF.addActionListener(new java.awt.event.ActionListener() {
+        CampCPFCadasPF.setText("Informe seu CPF");
+        CampCPFCadasPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCPFActionPerformed(evt);
+                CampCPFCadasPFActionPerformed(evt);
             }
         });
 
@@ -139,10 +138,10 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(51, 255, 255));
         jLabel5.setText("Email:");
 
-        txtCPF1.setText("jFormattedTextField1");
-        txtCPF1.addActionListener(new java.awt.event.ActionListener() {
+        CampEmailCadasPF.setText("Informe seu E-mail");
+        CampEmailCadasPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCPF1ActionPerformed(evt);
+                CampEmailCadasPFActionPerformed(evt);
             }
         });
 
@@ -150,67 +149,67 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(51, 255, 255));
         jLabel7.setText("Seu gênero:");
 
-        options_genero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Masculino", "Feminino", "Outros" }));
-        options_genero.addActionListener(new java.awt.event.ActionListener() {
+        MenuSexoCadasPF.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Masculino", "Feminino", "Outros" }));
+        MenuSexoCadasPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                options_generoActionPerformed(evt);
+                MenuSexoCadasPFActionPerformed(evt);
             }
         });
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/iconestoque.png"))); // NOI18N
         jLabel6.setText("jLabel6");
 
-        txtNome_pj.addActionListener(new java.awt.event.ActionListener() {
+        compNomeComCadasPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNome_pjActionPerformed(evt);
+                compNomeComCadasPFActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout telaDeCadastroPFLayout = new javax.swing.GroupLayout(telaDeCadastroPF);
+        telaDeCadastroPF.setLayout(telaDeCadastroPFLayout);
+        telaDeCadastroPFLayout.setHorizontalGroup(
+            telaDeCadastroPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaDeCadastroPFLayout.createSequentialGroup()
                 .addGap(27, 27, 27)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(btn_excluir, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(telaDeCadastroPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(telaDeCadastroPFLayout.createSequentialGroup()
+                        .addComponent(btnVoltarCadasPF, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn_salvar_CadastroPF, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnSalvaCadasPF, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(48, 48, 48)
-                        .addComponent(btn_enviar_CadastroPF, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(txtSenha)
+                        .addComponent(btnEntrarCadasPF, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(telaDeCadastroPFLayout.createSequentialGroup()
+                        .addComponent(CampCadasSenhaPF)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(options_genero, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(MenuSexoCadasPF, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(87, 87, 87))
-            .addGroup(jPanel2Layout.createSequentialGroup()
+            .addGroup(telaDeCadastroPFLayout.createSequentialGroup()
                 .addGap(28, 28, 28)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(telaDeCadastroPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel3)
                     .addComponent(jLabel5)
                     .addComponent(jLabel2)
-                    .addComponent(txtNome_pj)
+                    .addComponent(compNomeComCadasPF)
                     .addComponent(jLabel4)
-                    .addComponent(txtCPF, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
-                    .addComponent(txtCPF1))
+                    .addComponent(CampCPFCadasPF, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
+                    .addComponent(CampEmailCadasPF))
                 .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+            .addGroup(telaDeCadastroPFLayout.createSequentialGroup()
+                .addGroup(telaDeCadastroPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(telaDeCadastroPFLayout.createSequentialGroup()
                         .addGap(216, 216, 216)
                         .addComponent(jLabel1))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGroup(telaDeCadastroPFLayout.createSequentialGroup()
                         .addGap(236, 236, 236)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 584, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        telaDeCadastroPFLayout.setVerticalGroup(
+            telaDeCadastroPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(telaDeCadastroPFLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -220,45 +219,45 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(12, 12, 12)
-                .addComponent(txtNome_pj, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(compNomeComCadasPF, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(CampCPFCadasPF, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtCPF1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(CampEmailCadasPF, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(telaDeCadastroPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CampCadasSenhaPF, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7)
-                    .addComponent(options_genero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(MenuSexoCadasPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(68, 68, 68)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_enviar_CadastroPF, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_salvar_CadastroPF, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_excluir, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(telaDeCadastroPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnEntrarCadasPF, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSalvaCadasPF, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnVoltarCadasPF, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26))
         );
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 584, 710));
+        getContentPane().add(telaDeCadastroPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 584, 710));
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/loginicon(1).png"))); // NOI18N
-        jMenu1.setText("Usuário");
+        MenoUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/loginicon(1).png"))); // NOI18N
+        MenoUsuario.setText("Usuário");
 
-        jMenuItem1.setText("Cadastre-se");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        botaoMenuCadastreSeUsuarioPF.setText("Cadastre-se");
+        botaoMenuCadastreSeUsuarioPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                botaoMenuCadastreSeUsuarioPFActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        MenoUsuario.add(botaoMenuCadastreSeUsuarioPF);
 
-        jMenuItem9.setText("Esqueci minha senha");
-        jMenu1.add(jMenuItem9);
+        botaoMenuEsqueUsuarioSenhaPF.setText("Esqueci minha senha");
+        MenoUsuario.add(botaoMenuEsqueUsuarioSenhaPF);
 
         jMenuItem2.setText("Sair");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
@@ -266,44 +265,44 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
                 jMenuItem2ActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem2);
+        MenoUsuario.add(jMenuItem2);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(MenoUsuario);
 
-        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/P.J.png"))); // NOI18N
-        jMenu5.setText("Pessoa Jurídica");
+        botaoMenuCadastreSePJ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/P.J.png"))); // NOI18N
+        botaoMenuCadastreSePJ.setText("Pessoa Jurídica");
 
-        jMenuItem11.setText("Cadastre-se");
-        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
+        botaoMenuCadrasteSePJ.setText("Cadastre-se");
+        botaoMenuCadrasteSePJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem11ActionPerformed(evt);
+                botaoMenuCadrasteSePJActionPerformed(evt);
             }
         });
-        jMenu5.add(jMenuItem11);
+        botaoMenuCadastreSePJ.add(botaoMenuCadrasteSePJ);
 
-        jMenuItem12.setText("Login");
-        jMenuItem12.addActionListener(new java.awt.event.ActionListener() {
+        botaoMenuLoginSePJ.setText("Login");
+        botaoMenuLoginSePJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem12ActionPerformed(evt);
+                botaoMenuLoginSePJActionPerformed(evt);
             }
         });
-        jMenu5.add(jMenuItem12);
+        botaoMenuCadastreSePJ.add(botaoMenuLoginSePJ);
 
-        jMenuBar1.add(jMenu5);
+        jMenuBar1.add(botaoMenuCadastreSePJ);
 
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/contact(1).png"))); // NOI18N
-        jMenu2.setText("Contato");
+        botaoMenuTelefoneSePJ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/contact(1).png"))); // NOI18N
+        botaoMenuTelefoneSePJ.setText("Contato");
 
-        jMenuItem3.setText("Telefone");
-        jMenu2.add(jMenuItem3);
+        botaoMenuTelefonePJ.setText("Telefone");
+        botaoMenuTelefoneSePJ.add(botaoMenuTelefonePJ);
 
-        jMenuItem4.setText("WhatsApp");
-        jMenu2.add(jMenuItem4);
+        botaoMenuWhatsappPJ.setText("WhatsApp");
+        botaoMenuTelefoneSePJ.add(botaoMenuWhatsappPJ);
 
         jMenuItem5.setText("Email");
-        jMenu2.add(jMenuItem5);
+        botaoMenuTelefoneSePJ.add(jMenuItem5);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(botaoMenuTelefoneSePJ);
 
         jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/sobreicon.png"))); // NOI18N
         jMenu4.setText("Sobre");
@@ -330,53 +329,53 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btn_excluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_excluirActionPerformed
+    private void btnVoltarCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarCadasPFActionPerformed
         int resposta = JOptionPane.showConfirmDialog(rootPane, "Deseja realmente excluir?", "Verificação", JOptionPane.YES_NO_OPTION);
         if (resposta==JOptionPane.YES_OPTION){
-            txtNome_pj.setText(" ");
-            txtSenha.setText(" ");
+            compNomeComCadasPF.setText(" ");
+            CampCadasSenhaPF.setText(" ");
         }
-    }//GEN-LAST:event_btn_excluirActionPerformed
+    }//GEN-LAST:event_btnVoltarCadasPFActionPerformed
 
-    private void txtCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCPFActionPerformed
+    private void CampCPFCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampCPFCadasPFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtCPFActionPerformed
+    }//GEN-LAST:event_CampCPFCadasPFActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void botaoMenuCadastreSeUsuarioPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoMenuCadastreSeUsuarioPFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_botaoMenuCadastreSeUsuarioPFActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
-    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+    private void botaoMenuCadrasteSePJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoMenuCadrasteSePJActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem11ActionPerformed
+    }//GEN-LAST:event_botaoMenuCadrasteSePJActionPerformed
 
-    private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
+    private void botaoMenuLoginSePJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoMenuLoginSePJActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem12ActionPerformed
+    }//GEN-LAST:event_botaoMenuLoginSePJActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
-    private void txtCPF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCPF1ActionPerformed
+    private void CampEmailCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampEmailCadasPFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtCPF1ActionPerformed
+    }//GEN-LAST:event_CampEmailCadasPFActionPerformed
 
-    private void options_generoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_options_generoActionPerformed
+    private void MenuSexoCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuSexoCadasPFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_options_generoActionPerformed
+    }//GEN-LAST:event_MenuSexoCadasPFActionPerformed
 
-    private void btn_salvar_CadastroPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salvar_CadastroPFActionPerformed
+    private void btnSalvaCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvaCadasPFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_salvar_CadastroPFActionPerformed
+    }//GEN-LAST:event_btnSalvaCadasPFActionPerformed
 
-    private void txtNome_pjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNome_pjActionPerformed
+    private void compNomeComCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compNomeComCadasPFActionPerformed
 
-    }//GEN-LAST:event_txtNome_pjActionPerformed
+    }//GEN-LAST:event_compNomeComCadasPFActionPerformed
 
     /**
      * @param args the command line arguments
@@ -414,10 +413,10 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    javax.swing.JPanel jPanel2;
+    javax.swing.JPasswordField CampCadasSenhaPF;
+    javax.swing.JComboBox<String> MenuSexoCadasPF;
+    javax.swing.JTextField compNomeComCadasPF;
     javax.swing.JSeparator jSeparator1;
-    javax.swing.JComboBox<String> options_genero;
-    javax.swing.JTextField txtNome_pj;
-    javax.swing.JPasswordField txtSenha;
+    javax.swing.JPanel telaDeCadastroPF;
     // End of variables declaration//GEN-END:variables
 }

@@ -28,18 +28,18 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        btn_clean = new javax.swing.JButton();
-        txtPassword = new javax.swing.JPasswordField();
+        telaDeAcessoLoginPJ = new javax.swing.JPanel();
+        btnVoltarLoginPJ = new javax.swing.JButton();
+        CampSenhaLoginPJ = new javax.swing.JPasswordField();
         javax.swing.JLabel jLabel1 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel2 = new javax.swing.JLabel();
-        txtLogin_pf = new javax.swing.JTextField();
-        checkbox = new javax.swing.JCheckBox();
-        javax.swing.JButton sent = new javax.swing.JButton();
+        campEmailLoginPJ = new javax.swing.JTextField();
+        checkBoxLembrarLoginPJ = new javax.swing.JCheckBox();
+        javax.swing.JButton btnEntrarLoginPJ = new javax.swing.JButton();
         javax.swing.JSeparator jSeparator1 = new javax.swing.JSeparator();
         javax.swing.JLabel jLabel6 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel5 = new javax.swing.JLabel();
-        javax.swing.JButton btn_salvar_CadastroPF = new javax.swing.JButton();
+        javax.swing.JButton btnEsqueceuSenhaLoginPJ = new javax.swing.JButton();
         javax.swing.JLabel linkLabel = new javax.swing.JLabel();
         javax.swing.JMenuBar jMenuBar1 = new javax.swing.JMenuBar();
         javax.swing.JMenu jMenu1 = new javax.swing.JMenu();
@@ -61,28 +61,28 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(19, 20, 39));
-        jPanel1.setToolTipText("");
-        jPanel1.setPreferredSize(new java.awt.Dimension(437, 672));
+        telaDeAcessoLoginPJ.setBackground(new java.awt.Color(19, 20, 39));
+        telaDeAcessoLoginPJ.setToolTipText("");
+        telaDeAcessoLoginPJ.setPreferredSize(new java.awt.Dimension(437, 672));
 
-        btn_clean.setBackground(new java.awt.Color(255, 0, 0));
-        btn_clean.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
-        btn_clean.setForeground(new java.awt.Color(0, 0, 0));
-        btn_clean.setText("Voltar");
-        btn_clean.setMaximumSize(new java.awt.Dimension(125, 25));
-        btn_clean.setMinimumSize(new java.awt.Dimension(125, 25));
-        btn_clean.setPreferredSize(new java.awt.Dimension(125, 30));
-        btn_clean.setSelected(true);
-        btn_clean.addActionListener(new java.awt.event.ActionListener() {
+        btnVoltarLoginPJ.setBackground(new java.awt.Color(255, 0, 0));
+        btnVoltarLoginPJ.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
+        btnVoltarLoginPJ.setForeground(new java.awt.Color(0, 0, 0));
+        btnVoltarLoginPJ.setText("Voltar");
+        btnVoltarLoginPJ.setMaximumSize(new java.awt.Dimension(125, 25));
+        btnVoltarLoginPJ.setMinimumSize(new java.awt.Dimension(125, 25));
+        btnVoltarLoginPJ.setPreferredSize(new java.awt.Dimension(125, 30));
+        btnVoltarLoginPJ.setSelected(true);
+        btnVoltarLoginPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_cleanActionPerformed(evt);
+                btnVoltarLoginPJActionPerformed(evt);
             }
         });
 
-        txtPassword.setText("*******");
-        txtPassword.addActionListener(new java.awt.event.ActionListener() {
+        CampSenhaLoginPJ.setText("*******");
+        CampSenhaLoginPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPasswordActionPerformed(evt);
+                CampSenhaLoginPJActionPerformed(evt);
             }
         });
 
@@ -94,32 +94,32 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(51, 255, 255));
         jLabel2.setText("Login:");
 
-        txtLogin_pf.setText("Digite seu login");
-        txtLogin_pf.addActionListener(new java.awt.event.ActionListener() {
+        campEmailLoginPJ.setText("Digite seu login");
+        campEmailLoginPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLogin_pfActionPerformed(evt);
+                campEmailLoginPJActionPerformed(evt);
             }
         });
 
-        checkbox.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
-        checkbox.setForeground(new java.awt.Color(51, 255, 255));
-        checkbox.setText("Lembrar Login.");
-        checkbox.addActionListener(new java.awt.event.ActionListener() {
+        checkBoxLembrarLoginPJ.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
+        checkBoxLembrarLoginPJ.setForeground(new java.awt.Color(51, 255, 255));
+        checkBoxLembrarLoginPJ.setText("Lembrar Login.");
+        checkBoxLembrarLoginPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkboxActionPerformed(evt);
+                checkBoxLembrarLoginPJActionPerformed(evt);
             }
         });
 
-        sent.setBackground(new java.awt.Color(0, 255, 0));
-        sent.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
-        sent.setForeground(new java.awt.Color(0, 0, 0));
-        sent.setText("Enviar");
-        sent.setMaximumSize(new java.awt.Dimension(75, 25));
-        sent.setMinimumSize(new java.awt.Dimension(75, 25));
-        sent.setPreferredSize(new java.awt.Dimension(125, 30));
-        sent.addActionListener(new java.awt.event.ActionListener() {
+        btnEntrarLoginPJ.setBackground(new java.awt.Color(0, 255, 0));
+        btnEntrarLoginPJ.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
+        btnEntrarLoginPJ.setForeground(new java.awt.Color(0, 0, 0));
+        btnEntrarLoginPJ.setText("Entrar");
+        btnEntrarLoginPJ.setMaximumSize(new java.awt.Dimension(75, 25));
+        btnEntrarLoginPJ.setMinimumSize(new java.awt.Dimension(75, 25));
+        btnEntrarLoginPJ.setPreferredSize(new java.awt.Dimension(125, 30));
+        btnEntrarLoginPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sentActionPerformed(evt);
+                btnEntrarLoginPJActionPerformed(evt);
             }
         });
 
@@ -134,12 +134,12 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
         jLabel5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel5.setMinimumSize(new java.awt.Dimension(66, 25));
 
-        btn_salvar_CadastroPF.setBackground(new java.awt.Color(0, 255, 203));
-        btn_salvar_CadastroPF.setForeground(new java.awt.Color(0, 0, 0));
-        btn_salvar_CadastroPF.setText("Clique aqui!");
-        btn_salvar_CadastroPF.addActionListener(new java.awt.event.ActionListener() {
+        btnEsqueceuSenhaLoginPJ.setBackground(new java.awt.Color(0, 255, 203));
+        btnEsqueceuSenhaLoginPJ.setForeground(new java.awt.Color(0, 0, 0));
+        btnEsqueceuSenhaLoginPJ.setText("Clique aqui!");
+        btnEsqueceuSenhaLoginPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_salvar_CadastroPFActionPerformed(evt);
+                btnEsqueceuSenhaLoginPJActionPerformed(evt);
             }
         });
 
@@ -155,51 +155,51 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout telaDeAcessoLoginPJLayout = new javax.swing.GroupLayout(telaDeAcessoLoginPJ);
+        telaDeAcessoLoginPJ.setLayout(telaDeAcessoLoginPJLayout);
+        telaDeAcessoLoginPJLayout.setHorizontalGroup(
+            telaDeAcessoLoginPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator1)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaDeAcessoLoginPJLayout.createSequentialGroup()
                 .addContainerGap(46, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(telaDeAcessoLoginPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(telaDeAcessoLoginPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaDeAcessoLoginPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                            .addGroup(telaDeAcessoLoginPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaDeAcessoLoginPJLayout.createSequentialGroup()
                                     .addComponent(linkLabel)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(btn_salvar_CadastroPF)
+                                    .addComponent(btnEsqueceuSenhaLoginPJ)
                                     .addGap(78, 78, 78))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                    .addComponent(txtLogin_pf, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaDeAcessoLoginPJLayout.createSequentialGroup()
+                                    .addComponent(campEmailLoginPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addContainerGap()))
                             .addComponent(jLabel1))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                            .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaDeAcessoLoginPJLayout.createSequentialGroup()
+                            .addComponent(CampSenhaLoginPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addContainerGap()))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btn_clean, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(telaDeAcessoLoginPJLayout.createSequentialGroup()
+                        .addGroup(telaDeAcessoLoginPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(telaDeAcessoLoginPJLayout.createSequentialGroup()
+                                .addComponent(btnVoltarLoginPJ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(96, 96, 96)
-                                .addComponent(sent, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(checkbox))
+                                .addComponent(btnEntrarLoginPJ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(checkBoxLembrarLoginPJ))
                         .addContainerGap(72, Short.MAX_VALUE))))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(telaDeAcessoLoginPJLayout.createSequentialGroup()
+                .addGroup(telaDeAcessoLoginPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(telaDeAcessoLoginPJLayout.createSequentialGroup()
                         .addGap(178, 178, 178)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGroup(telaDeAcessoLoginPJLayout.createSequentialGroup()
                         .addGap(151, 151, 151)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        telaDeAcessoLoginPJLayout.setVerticalGroup(
+            telaDeAcessoLoginPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(telaDeAcessoLoginPJLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -209,21 +209,21 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
                 .addGap(36, 36, 36)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtLogin_pf, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(campEmailLoginPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(13, 13, 13)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(CampSenhaLoginPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(checkbox)
+                .addComponent(checkBoxLembrarLoginPJ)
                 .addGap(57, 57, 57)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_clean, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(sent, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(telaDeAcessoLoginPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnVoltarLoginPJ, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnEntrarLoginPJ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(73, 73, 73)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(telaDeAcessoLoginPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(linkLabel)
-                    .addComponent(btn_salvar_CadastroPF))
+                    .addComponent(btnEsqueceuSenhaLoginPJ))
                 .addGap(53, 53, 53))
         );
 
@@ -311,56 +311,56 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 464, Short.MAX_VALUE)
+            .addComponent(telaDeAcessoLoginPJ, javax.swing.GroupLayout.DEFAULT_SIZE, 464, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE)
+            .addComponent(telaDeAcessoLoginPJ, javax.swing.GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE)
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btn_cleanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cleanActionPerformed
+    private void btnVoltarLoginPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarLoginPJActionPerformed
 
         int resposta = JOptionPane.showConfirmDialog(rootPane, "Deseja realmente excluir?", "Verificação", JOptionPane.YES_NO_OPTION);
         if (resposta==JOptionPane.YES_OPTION){
-            txtLogin_pf.setText(" ");
-            txtPassword.setText(" ");
+            campEmailLoginPJ.setText(" ");
+            CampSenhaLoginPJ.setText(" ");
         }
 
-    }//GEN-LAST:event_btn_cleanActionPerformed
+    }//GEN-LAST:event_btnVoltarLoginPJActionPerformed
 
-    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
+    private void CampSenhaLoginPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampSenhaLoginPJActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtPasswordActionPerformed
+    }//GEN-LAST:event_CampSenhaLoginPJActionPerformed
 
-    private void txtLogin_pfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLogin_pfActionPerformed
+    private void campEmailLoginPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campEmailLoginPJActionPerformed
         //        if (txtLogin_pf.isValid()){
             //            txtLogin_pf.setText(" ");
             //        }
         //        else{
             //            txtLogin_pf.setText("Digite seu login:");
             //        }
-    }//GEN-LAST:event_txtLogin_pfActionPerformed
+    }//GEN-LAST:event_campEmailLoginPJActionPerformed
 
-    private void checkboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkboxActionPerformed
+    private void checkBoxLembrarLoginPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkBoxLembrarLoginPJActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_checkboxActionPerformed
+    }//GEN-LAST:event_checkBoxLembrarLoginPJActionPerformed
 
-    private void sentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sentActionPerformed
-        if (txtLogin_pf.getText().equals("Miguel Nicolelis") && txtPassword.getText().equals("1234")){
+    private void btnEntrarLoginPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarLoginPJActionPerformed
+        if (campEmailLoginPJ.getText().equals("Miguel Nicolelis") && CampSenhaLoginPJ.getText().equals("1234")){
             JOptionPane.showInputDialog("Por favor, confirme seu acesso com seu CNPJ.");
         }
         else{
             JOptionPane.showMessageDialog(rootPane, "Dados não correspondentes aos usuários cadastrados.", "Acesso negado", HEIGHT);
         }
-    }//GEN-LAST:event_sentActionPerformed
+    }//GEN-LAST:event_btnEntrarLoginPJActionPerformed
 
-    private void btn_salvar_CadastroPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salvar_CadastroPFActionPerformed
+    private void btnEsqueceuSenhaLoginPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEsqueceuSenhaLoginPJActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_salvar_CadastroPFActionPerformed
+    }//GEN-LAST:event_btnEsqueceuSenhaLoginPJActionPerformed
 
     private void linkLabelAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_linkLabelAncestorAdded
         // TODO add your handling code here:
@@ -422,10 +422,10 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    javax.swing.JButton btn_clean;
-    javax.swing.JCheckBox checkbox;
-    javax.swing.JPanel jPanel1;
-    javax.swing.JTextField txtLogin_pf;
-    javax.swing.JPasswordField txtPassword;
+    javax.swing.JPasswordField CampSenhaLoginPJ;
+    javax.swing.JButton btnVoltarLoginPJ;
+    javax.swing.JTextField campEmailLoginPJ;
+    javax.swing.JCheckBox checkBoxLembrarLoginPJ;
+    javax.swing.JPanel telaDeAcessoLoginPJ;
     // End of variables declaration//GEN-END:variables
 }

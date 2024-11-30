@@ -209,17 +209,17 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" pref="464" max="32767" attributes="0"/>
+          <Component id="telaDeAcessoLginPF" alignment="0" pref="464" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" pref="699" max="32767" attributes="0"/>
+          <Component id="telaDeAcessoLginPF" alignment="0" pref="699" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanel1">
+    <Container class="javax.swing.JPanel" name="telaDeAcessoLginPF">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="27" green="14" red="13" type="rgb"/>
@@ -250,29 +250,29 @@
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="linkLabel" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="btn_salvar_CadastroPF" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnEsqueceuSenhaLoginPF" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="txtLogin_pf" min="-2" pref="373" max="-2" attributes="0"/>
+                                      <Component id="campEmailLoginPF" min="-2" pref="373" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="txtPassword" min="-2" pref="373" max="-2" attributes="0"/>
+                              <Component id="campSenhaLoginPJ" min="-2" pref="373" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="btn_clean" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnVoltarLoginPF" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
-                                  <Component id="sent" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bntEntrarLoginPF" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="checkterms" min="-2" max="-2" attributes="0"/>
+                              <Component id="checkBoxLembrarSenhaPF" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="72" max="32767" attributes="0"/>
                       </Group>
@@ -305,22 +305,22 @@
                   <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="txtLogin_pf" min="-2" pref="37" max="-2" attributes="0"/>
+                  <Component id="campEmailLoginPF" min="-2" pref="37" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="txtPassword" min="-2" pref="37" max="-2" attributes="0"/>
+                  <Component id="campSenhaLoginPJ" min="-2" pref="37" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="checkterms" min="-2" max="-2" attributes="0"/>
+                  <Component id="checkBoxLembrarSenhaPF" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btn_clean" alignment="3" max="32767" attributes="0"/>
-                      <Component id="sent" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnVoltarLoginPF" alignment="3" max="32767" attributes="0"/>
+                      <Component id="bntEntrarLoginPF" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="linkLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btn_salvar_CadastroPF" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnEsqueceuSenhaLoginPF" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
               </Group>
@@ -328,7 +328,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="btn_clean">
+        <Component class="javax.swing.JButton" name="btnVoltarLoginPF">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="ff" type="rgb"/>
@@ -352,18 +352,18 @@
             <Property name="selected" type="boolean" value="true"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_cleanActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVoltarLoginPFActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JPasswordField" name="txtPassword">
+        <Component class="javax.swing.JPasswordField" name="campSenhaLoginPJ">
           <Properties>
             <Property name="text" type="java.lang.String" value="*******"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPasswordActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campSenhaLoginPJActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
@@ -391,18 +391,18 @@
             <Property name="text" type="java.lang.String" value="Login:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtLogin_pf">
+        <Component class="javax.swing.JTextField" name="campEmailLoginPF">
           <Properties>
             <Property name="text" type="java.lang.String" value="Digite seu login"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtLogin_pfActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campEmailLoginPFActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="checkterms">
+        <Component class="javax.swing.JCheckBox" name="checkBoxLembrarSenhaPF">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Cantarell" size="15" style="1"/>
@@ -413,13 +413,13 @@
             <Property name="text" type="java.lang.String" value="Lembrar Login."/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checktermsActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkBoxLembrarSenhaPFActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="sent">
+        <Component class="javax.swing.JButton" name="bntEntrarLoginPF">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="ff" red="0" type="rgb"/>
@@ -430,7 +430,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Enviar"/>
+            <Property name="text" type="java.lang.String" value="Entrar"/>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[75, 25]"/>
             </Property>
@@ -442,7 +442,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sentActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bntEntrarLoginPFActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator1">
@@ -478,7 +478,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btn_salvar_CadastroPF">
+        <Component class="javax.swing.JButton" name="btnEsqueceuSenhaLoginPF">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cb" green="ff" red="0" type="rgb"/>
@@ -489,7 +489,7 @@
             <Property name="text" type="java.lang.String" value="Clique aqui!"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_salvar_CadastroPFActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEsqueceuSenhaLoginPFActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="linkLabel">

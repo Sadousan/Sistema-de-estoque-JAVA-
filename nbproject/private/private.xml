@@ -3,12 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/home/samueldouglasdossantos/NetBeansProjects/JavaNassau/src/project_interface/view/GerenciamentoEstoque.java</file>
             <file>file:/home/samueldouglasdossantos/NetBeansProjects/JavaNassau/src/project_interface/view/CadastroPF_sdi1.java</file>
+            <file>file:/home/samueldouglasdossantos/NetBeansProjects/JavaNassau/src/project_interface/view/Produtos.java</file>
+            <file>file:/home/samueldouglasdossantos/NetBeansProjects/JavaNassau/src/project_interface/model/Produto.java</file>
             <file>file:/home/samueldouglasdossantos/NetBeansProjects/JavaNassau/src/project_interface/view/TelaP.java</file>
-            <file>file:/home/samueldouglasdossantos/NetBeansProjects/JavaNassau/src/project_interface/view/MDI/TelaPrincipalMDI.java</file>
-            <file>file:/home/samueldouglasdossantos/NetBeansProjects/JavaNassau/src/project_interface/view/MDI/LoginPF.java</file>
+            <file>file:/home/samueldouglasdossantos/NetBeansProjects/JavaNassau/src/project_interface/view/LoginPF_sdi.java</file>
+            <file>file:/home/samueldouglasdossantos/NetBeansProjects/JavaNassau/src/project_interface/view/LoginPJ_sdi.java</file>
             <file>file:/home/samueldouglasdossantos/NetBeansProjects/JavaNassau/src/project_interface/view/TelaPrincipalSDI.java</file>
-            <file>file:/home/samueldouglasdossantos/NetBeansProjects/JavaNassau/src/project_interface/util/BancoDeDados.java</file>
+            <file>file:/home/samueldouglasdossantos/NetBeansProjects/JavaNassau/src/project_interface/view/CompraProdutos.java</file>
+            <file>file:/home/samueldouglasdossantos/NetBeansProjects/JavaNassau/src/project_interface/view/CadastroPJ_sdi.java</file>
         </group>
     </open-files>
 </project-private>
