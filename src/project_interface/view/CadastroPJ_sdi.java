@@ -142,7 +142,7 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
                 .addGap(59, 59, 59))
         );
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cadastro de Pessoa Jurídica");
         setMinimumSize(new java.awt.Dimension(570, 766));
         setResizable(false);
@@ -490,11 +490,11 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
     }//GEN-LAST:event_bntSalvarCadasPJActionPerformed
 
     private void btnVoltarCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarCadasPJActionPerformed
-        int resposta = JOptionPane.showConfirmDialog(rootPane, "Deseja realmente excluir?", "Verificação", JOptionPane.YES_NO_OPTION);
-        if (resposta==JOptionPane.YES_OPTION){
-            CampNomeEmpreCadasPJ.setText(" ");
-            campSenhaCadasPJ.setText(" ");
-        }
+        int resposta = JOptionPane.showConfirmDialog(rootPane, "Voltar pode acarretar a exclusão de seus dados. Deseja prosseguir?", "Verificação", JOptionPane.YES_NO_OPTION);
+            if (resposta==JOptionPane.YES_OPTION){
+                new TelaPrincipalSDI().setVisible(true);
+                this.dispose();
+            }
     }//GEN-LAST:event_btnVoltarCadasPJActionPerformed
 
     private void campRuaCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campRuaCadasPJActionPerformed

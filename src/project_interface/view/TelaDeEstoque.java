@@ -46,6 +46,8 @@ public class TelaDeEstoque extends javax.swing.JDialog {
         setTitle("TELA DE CONTROLE ESTOQUE");
         setResizable(false);
 
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         TextPreço.setBackground(new java.awt.Color(19, 20, 39));
         TextPreço.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
@@ -141,16 +143,12 @@ public class TelaDeEstoque extends javax.swing.JDialog {
         TextPreço.setLayout(TextPreçoLayout);
         TextPreçoLayout.setHorizontalGroup(
             TextPreçoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TextPreçoLayout.createSequentialGroup()
-                .addGap(155, 155, 155)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TextPreçoLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addComponent(btnDeADDProdutoNaLista, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(48, 48, 48)
                 .addComponent(btnEditarListaDeProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addComponent(btnEditarListaDeProduto1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TextPreçoLayout.createSequentialGroup()
@@ -172,6 +170,10 @@ public class TelaDeEstoque extends javax.swing.JDialog {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(41, 41, 41))
+            .addGroup(TextPreçoLayout.createSequentialGroup()
+                .addGap(155, 155, 155)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(TextPreçoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(TextPreçoLayout.createSequentialGroup()
                     .addGap(29, 29, 29)
@@ -205,21 +207,10 @@ public class TelaDeEstoque extends javax.swing.JDialog {
                 .addGroup(TextPreçoLayout.createSequentialGroup()
                     .addGap(124, 124, 124)
                     .addComponent(textenomeproduto, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(701, Short.MAX_VALUE)))
+                    .addContainerGap(708, Short.MAX_VALUE)))
         );
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(TextPreço, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(TextPreço, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 77, Short.MAX_VALUE))
-        );
+        jPanel1.add(TextPreço, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 860));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -237,21 +228,21 @@ public class TelaDeEstoque extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnEditarListaDeProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarListaDeProdutoActionPerformed
-
-    }//GEN-LAST:event_btnEditarListaDeProdutoActionPerformed
-
-    private void btnDeADDProdutoNaListaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeADDProdutoNaListaActionPerformed
-
-    }//GEN-LAST:event_btnDeADDProdutoNaListaActionPerformed
+    private void btnEditarListaDeProduto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarListaDeProduto1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditarListaDeProduto1ActionPerformed
 
     private void campoTelaEstoqueDeNomeDoProduto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoTelaEstoqueDeNomeDoProduto1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_campoTelaEstoqueDeNomeDoProduto1ActionPerformed
 
-    private void btnEditarListaDeProduto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarListaDeProduto1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEditarListaDeProduto1ActionPerformed
+    private void btnDeADDProdutoNaListaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeADDProdutoNaListaActionPerformed
+
+    }//GEN-LAST:event_btnDeADDProdutoNaListaActionPerformed
+
+    private void btnEditarListaDeProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarListaDeProdutoActionPerformed
+
+    }//GEN-LAST:event_btnEditarListaDeProdutoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -297,7 +288,7 @@ public class TelaDeEstoque extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel TextPreço;
-    javax.swing.JButton btnDeADDProdutoNaLista;
+    private javax.swing.JButton btnDeADDProdutoNaLista;
     private javax.swing.JButton btnEditarListaDeProduto;
     private javax.swing.JButton btnEditarListaDeProduto1;
     private javax.swing.JTextField campoTelaEstoqueDeNomeDoProduto1;

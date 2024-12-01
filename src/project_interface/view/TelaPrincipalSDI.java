@@ -84,8 +84,9 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("telaprincipalSDI");
+        setResizable(false);
 
         telamainsd.setBackground(new java.awt.Color(19, 20, 39));
 
@@ -166,7 +167,7 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
                 .addComponent(selecionar_pessoa, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
                 .addComponent(submeter, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(183, Short.MAX_VALUE))
+                .addContainerGap(199, Short.MAX_VALUE))
         );
 
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/loginicon(1).png"))); // NOI18N
@@ -271,13 +272,11 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(telamainsd, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(telamainsd)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(telamainsd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(telamainsd)
         );
 
         pack();
@@ -285,7 +284,7 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void fazer_cadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fazer_cadastroActionPerformed
-        new CadastroPF_sdi1().setVisible(true);
+        new CadastroPF_sdi().setVisible(true);
         
     }//GEN-LAST:event_fazer_cadastroActionPerformed
 
@@ -304,7 +303,7 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem11ActionPerformed
 
     private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
-        // TODO add your handling code here:
+        new LoginPJ_sdi().setVisible(rootPaneCheckingEnabled);
     }//GEN-LAST:event_jMenuItem12ActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
@@ -313,10 +312,10 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
 
     private void submeterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submeterActionPerformed
         if(selecionar_pessoa.getSelectedItem().equals("Pessoa Física")){
-            JOptionPane.showMessageDialog(rootPane, "Carregando acesso de pessoa física");
+            new TelaEscolhaCadLoginPF().setVisible(true);
         }
         else if(selecionar_pessoa.getSelectedItem().equals("Pessoa Jurídica")){
-            JOptionPane.showMessageDialog(rootPane, "Carregando acesso de pessoa jurídica");
+            new TelaEscolhaCadLoginPJ().setVisible(true);
         }
         else{
                 JOptionPane.showMessageDialog(rootPane, "Ocorreu um erro! revise a opção selecionada.", "Opção inválida.", HEIGHT);

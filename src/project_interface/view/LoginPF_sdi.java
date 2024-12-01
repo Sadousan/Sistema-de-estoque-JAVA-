@@ -370,19 +370,17 @@ public class LoginPF_sdi extends javax.swing.JDialog {
     }//GEN-LAST:event_checkBoxLembrarSenhaPFActionPerformed
 
     private void btnVoltarLoginPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarLoginPFActionPerformed
-        
-        int resposta = JOptionPane.showConfirmDialog(rootPane, "Deseja realmente excluir?", "Verificação", JOptionPane.YES_NO_OPTION); 
-        if (resposta==JOptionPane.YES_OPTION){
-            campEmailLoginPF.setText(" ");
-            campSenhaLoginPJ.setText(" ");
-        }
-        
-        
+        int resposta = JOptionPane.showConfirmDialog(rootPane, "Voltar pode acarretar a exclusão de seus dados. Deseja prosseguir?", "Verificação", JOptionPane.YES_NO_OPTION);
+            if (resposta==JOptionPane.YES_OPTION){
+                new TelaPrincipalSDI().setVisible(true);
+                this.dispose();
+            }              
     }//GEN-LAST:event_btnVoltarLoginPFActionPerformed
 
     private void bntEntrarLoginPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntEntrarLoginPFActionPerformed
         if (campEmailLoginPF.getText().equals("Alexandre") && campSenhaLoginPJ.getText().equals("1234")){
             JOptionPane.showInputDialog("Por favor, confirme seu acesso com seu CPF.");
+            
         }
         else{
             JOptionPane.showMessageDialog(rootPane, "Dados não correspondentes aos usuários cadastrados.", "Acesso negado", HEIGHT);
@@ -393,7 +391,7 @@ public class LoginPF_sdi extends javax.swing.JDialog {
 //        if (txtLogin_pf.isValid()){
 //            txtLogin_pf.setText(" ");
 //        }
-//        else{
+//        else if{
 //            txtLogin_pf.setText("Digite seu login:");
 //        }
     }//GEN-LAST:event_campEmailLoginPFActionPerformed

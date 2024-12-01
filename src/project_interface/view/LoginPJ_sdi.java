@@ -58,7 +58,7 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
         javax.swing.JMenuItem jMenuItem7 = new javax.swing.JMenuItem();
         javax.swing.JMenuItem jMenuItem8 = new javax.swing.JMenuItem();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
         telaDeAcessoLoginPJ.setBackground(new java.awt.Color(19, 20, 39));
@@ -323,13 +323,11 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVoltarLoginPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarLoginPJActionPerformed
-
-        int resposta = JOptionPane.showConfirmDialog(rootPane, "Deseja realmente excluir?", "Verificação", JOptionPane.YES_NO_OPTION);
-        if (resposta==JOptionPane.YES_OPTION){
-            campEmailLoginPJ.setText(" ");
-            CampSenhaLoginPJ.setText(" ");
-        }
-
+        int resposta = JOptionPane.showConfirmDialog(rootPane, "Voltar pode acarretar a exclusão de seus dados. Deseja prosseguir?", "Verificação", JOptionPane.YES_NO_OPTION);
+            if (resposta==JOptionPane.YES_OPTION){
+                new TelaPrincipalSDI().setVisible(true);
+                this.dispose();
+            }
     }//GEN-LAST:event_btnVoltarLoginPJActionPerformed
 
     private void CampSenhaLoginPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampSenhaLoginPJActionPerformed

@@ -1,22 +1,19 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package javanassaut;
-
-import javax.swing.JOptionPane;
+package project_interface.view;
 
 /**
  *
- * @author aland
+ * @author samueldouglasdossantos
  */
-public class TelaEscolhaCadrasteSeOuLogin extends javax.swing.JDialog {
+public class TelaEscolhaCadLoginPF extends javax.swing.JFrame {
 
     /**
-     * Creates new form TelaEscolhaCadrasteSeOuLogin
+     * Creates new form TelaEscolhaCadLogin
      */
-    public TelaEscolhaCadrasteSeOuLogin(java.awt.Frame parent, boolean modal) {
-        super(parent, modal);
+    public TelaEscolhaCadLoginPF() {
         initComponents();
     }
 
@@ -29,17 +26,19 @@ public class TelaEscolhaCadrasteSeOuLogin extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        TelaEscolhaLoginCadastreSe = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        btn_JaPossuiLoginTelaPrincipal = new javax.swing.JButton();
+        javax.swing.JPanel jPanel1 = new javax.swing.JPanel();
+        TelaEscolhaLoginCadastre = new javax.swing.JPanel();
+        javax.swing.JLabel jLabel1 = new javax.swing.JLabel();
+        javax.swing.JButton btn_JaPossuiLoginTelaPrincipal = new javax.swing.JButton();
         btn_CadastraSeTelaPrincipal = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("TELA ESCOLHAR");
         setResizable(false);
 
-        TelaEscolhaLoginCadastreSe.setBackground(new java.awt.Color(19, 20, 39));
-        TelaEscolhaLoginCadastreSe.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        TelaEscolhaLoginCadastre.setBackground(new java.awt.Color(19, 20, 39));
+        TelaEscolhaLoginCadastre.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -70,55 +69,58 @@ public class TelaEscolhaCadrasteSeOuLogin extends javax.swing.JDialog {
             }
         });
 
-        javax.swing.GroupLayout TelaEscolhaLoginCadastreSeLayout = new javax.swing.GroupLayout(TelaEscolhaLoginCadastreSe);
-        TelaEscolhaLoginCadastreSe.setLayout(TelaEscolhaLoginCadastreSeLayout);
-        TelaEscolhaLoginCadastreSeLayout.setHorizontalGroup(
-            TelaEscolhaLoginCadastreSeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TelaEscolhaLoginCadastreSeLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(91, 91, 91))
-            .addGroup(TelaEscolhaLoginCadastreSeLayout.createSequentialGroup()
+        javax.swing.GroupLayout TelaEscolhaLoginCadastreLayout = new javax.swing.GroupLayout(TelaEscolhaLoginCadastre);
+        TelaEscolhaLoginCadastre.setLayout(TelaEscolhaLoginCadastreLayout);
+        TelaEscolhaLoginCadastreLayout.setHorizontalGroup(
+            TelaEscolhaLoginCadastreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TelaEscolhaLoginCadastreLayout.createSequentialGroup()
                 .addGap(41, 41, 41)
                 .addComponent(btn_CadastraSeTelaPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
                 .addComponent(btn_JaPossuiLoginTelaPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TelaEscolhaLoginCadastreLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(80, 80, 80))
         );
-        TelaEscolhaLoginCadastreSeLayout.setVerticalGroup(
-            TelaEscolhaLoginCadastreSeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TelaEscolhaLoginCadastreSeLayout.createSequentialGroup()
+        TelaEscolhaLoginCadastreLayout.setVerticalGroup(
+            TelaEscolhaLoginCadastreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TelaEscolhaLoginCadastreLayout.createSequentialGroup()
                 .addGap(68, 68, 68)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(72, 72, 72)
-                .addGroup(TelaEscolhaLoginCadastreSeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(TelaEscolhaLoginCadastreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_CadastraSeTelaPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btn_JaPossuiLoginTelaPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(96, Short.MAX_VALUE))
         );
 
+        jPanel1.add(TelaEscolhaLoginCadastre, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(TelaEscolhaLoginCadastreSe, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(TelaEscolhaLoginCadastreSe, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_JaPossuiLoginTelaPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_JaPossuiLoginTelaPrincipalActionPerformed
- 
+        new LoginPF_sdi(this, true).setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btn_JaPossuiLoginTelaPrincipalActionPerformed
 
     private void btn_CadastraSeTelaPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CadastraSeTelaPrincipalActionPerformed
-
-        
-
+        new CadastroPF_sdi().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btn_CadastraSeTelaPrincipalActionPerformed
 
     /**
@@ -138,36 +140,27 @@ public class TelaEscolhaCadrasteSeOuLogin extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaEscolhaCadrasteSeOuLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaEscolhaCadLoginPF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaEscolhaCadrasteSeOuLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaEscolhaCadLoginPF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaEscolhaCadrasteSeOuLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaEscolhaCadLoginPF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaEscolhaCadrasteSeOuLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaEscolhaCadLoginPF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
 
-        /* Create and display the dialog */
+        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                TelaEscolhaCadrasteSeOuLogin dialog = new TelaEscolhaCadrasteSeOuLogin(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-                    @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
+                new TelaEscolhaCadLoginPF().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel TelaEscolhaLoginCadastreSe;
+    javax.swing.JPanel TelaEscolhaLoginCadastre;
     javax.swing.JButton btn_CadastraSeTelaPrincipal;
-    private javax.swing.JButton btn_JaPossuiLoginTelaPrincipal;
-    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

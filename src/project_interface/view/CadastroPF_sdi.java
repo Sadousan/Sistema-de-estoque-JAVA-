@@ -10,12 +10,12 @@ import javax.swing.JOptionPane;
  *
  * @author samueldouglasdossantos
  */
-public class CadastroPF_sdi1 extends javax.swing.JFrame {
+public class CadastroPF_sdi extends javax.swing.JFrame {
 
     /**
-     * Creates new form CadastroPF_sdi1
+     * Creates new form CadastroPF_sdi
      */
-    public CadastroPF_sdi1() {
+    public CadastroPF_sdi() {
         initComponents();
     }
 
@@ -29,7 +29,7 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
     private void initComponents() {
 
         javax.swing.JPanel jPanel1 = new javax.swing.JPanel();
-        telaDeCadastroPF = new javax.swing.JPanel();
+        javax.swing.JPanel telaDeCadastroPF = new javax.swing.JPanel();
         javax.swing.JLabel jLabel1 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel2 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel3 = new javax.swing.JLabel();
@@ -64,22 +64,10 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
         javax.swing.JMenuItem jMenuItem8 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("CadastroSDI");
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 572, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 746, -1, -1));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         telaDeCadastroPF.setBackground(new java.awt.Color(19, 20, 39));
         telaDeCadastroPF.setToolTipText("");
@@ -127,7 +115,11 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
             }
         });
 
-        CampCPFCadasPF.setText("Informe seu CPF");
+        try {
+            CampCPFCadasPF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
         CampCPFCadasPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CampCPFCadasPFActionPerformed(evt);
@@ -138,7 +130,7 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(51, 255, 255));
         jLabel5.setText("Email:");
 
-        CampEmailCadasPF.setText("Informe seu E-mail");
+        CampEmailCadasPF.setText("Digite seu Email:");
         CampEmailCadasPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CampEmailCadasPFActionPerformed(evt);
@@ -193,8 +185,8 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(compNomeComCadasPF)
                     .addComponent(jLabel4)
-                    .addComponent(CampCPFCadasPF, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
-                    .addComponent(CampEmailCadasPF))
+                    .addComponent(CampCPFCadasPF)
+                    .addComponent(CampEmailCadasPF, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE))
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(telaDeCadastroPFLayout.createSequentialGroup()
                 .addGroup(telaDeCadastroPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -214,9 +206,9 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel6)
-                .addGap(50, 50, 50)
+                .addGap(35, 35, 35)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(12, 12, 12)
                 .addComponent(compNomeComCadasPF, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -243,7 +235,9 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
                 .addGap(26, 26, 26))
         );
 
-        getContentPane().add(telaDeCadastroPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 584, 710));
+        jPanel1.add(telaDeCadastroPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, 710));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, -1));
 
         MenoUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/loginicon(1).png"))); // NOI18N
         MenoUsuario.setText("Usuário");
@@ -329,17 +323,33 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnSalvaCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvaCadasPFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSalvaCadasPFActionPerformed
+
     private void btnVoltarCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarCadasPFActionPerformed
-        int resposta = JOptionPane.showConfirmDialog(rootPane, "Deseja realmente excluir?", "Verificação", JOptionPane.YES_NO_OPTION);
-        if (resposta==JOptionPane.YES_OPTION){
-            compNomeComCadasPF.setText(" ");
-            CampCadasSenhaPF.setText(" ");
-        }
+        int resposta = JOptionPane.showConfirmDialog(rootPane, "Voltar pode acarretar a exclusão de seus dados. Deseja prosseguir?", "Verificação", JOptionPane.YES_NO_OPTION);
+            if (resposta==JOptionPane.YES_OPTION){
+               new TelaPrincipalSDI().setVisible(true);
+               this.dispose();
+            }
     }//GEN-LAST:event_btnVoltarCadasPFActionPerformed
 
     private void CampCPFCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampCPFCadasPFActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_CampCPFCadasPFActionPerformed
+
+    private void CampEmailCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampEmailCadasPFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CampEmailCadasPFActionPerformed
+
+    private void MenuSexoCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuSexoCadasPFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MenuSexoCadasPFActionPerformed
+
+    private void compNomeComCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compNomeComCadasPFActionPerformed
+
+    }//GEN-LAST:event_compNomeComCadasPFActionPerformed
 
     private void botaoMenuCadastreSeUsuarioPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoMenuCadastreSeUsuarioPFActionPerformed
         // TODO add your handling code here:
@@ -361,22 +371,6 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
-    private void CampEmailCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampEmailCadasPFActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CampEmailCadasPFActionPerformed
-
-    private void MenuSexoCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuSexoCadasPFActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MenuSexoCadasPFActionPerformed
-
-    private void btnSalvaCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvaCadasPFActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSalvaCadasPFActionPerformed
-
-    private void compNomeComCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compNomeComCadasPFActionPerformed
-
-    }//GEN-LAST:event_compNomeComCadasPFActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -394,20 +388,20 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CadastroPF_sdi1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroPF_sdi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CadastroPF_sdi1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroPF_sdi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CadastroPF_sdi1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroPF_sdi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CadastroPF_sdi1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroPF_sdi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CadastroPF_sdi1().setVisible(true);
+                new CadastroPF_sdi().setVisible(true);
             }
         });
     }
@@ -417,6 +411,5 @@ public class CadastroPF_sdi1 extends javax.swing.JFrame {
     javax.swing.JComboBox<String> MenuSexoCadasPF;
     javax.swing.JTextField compNomeComCadasPF;
     javax.swing.JSeparator jSeparator1;
-    javax.swing.JPanel telaDeCadastroPF;
     // End of variables declaration//GEN-END:variables
 }
