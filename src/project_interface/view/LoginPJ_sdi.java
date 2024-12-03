@@ -5,6 +5,8 @@
 package project_interface.view;
 
 import javax.swing.JOptionPane;
+import project_interface.model.UsuarioPJ;
+import project_interface.util.BDuserPJ;
 
 /**
  *
@@ -79,7 +81,15 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
             }
         });
 
-        CampSenhaLoginPJ.setText("*******");
+        CampSenhaLoginPJ.setText("0000000");
+        CampSenhaLoginPJ.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                CampSenhaLoginPJFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                CampSenhaLoginPJFocusLost(evt);
+            }
+        });
         CampSenhaLoginPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CampSenhaLoginPJActionPerformed(evt);
@@ -94,7 +104,15 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(51, 255, 255));
         jLabel2.setText("Login:");
 
-        campEmailLoginPJ.setText("Digite seu login");
+        campEmailLoginPJ.setText("Digite seu login:");
+        campEmailLoginPJ.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                campEmailLoginPJFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                campEmailLoginPJFocusLost(evt);
+            }
+        });
         campEmailLoginPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campEmailLoginPJActionPerformed(evt);
@@ -325,7 +343,6 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
     private void btnVoltarLoginPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarLoginPJActionPerformed
         int resposta = JOptionPane.showConfirmDialog(rootPane, "Voltar pode acarretar a exclusão de seus dados. Deseja prosseguir?", "Verificação", JOptionPane.YES_NO_OPTION);
             if (resposta==JOptionPane.YES_OPTION){
-                new TelaPrincipalSDI().setVisible(true);
                 this.dispose();
             }
     }//GEN-LAST:event_btnVoltarLoginPJActionPerformed
@@ -348,12 +365,36 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
     }//GEN-LAST:event_checkBoxLembrarLoginPJActionPerformed
 
     private void btnEntrarLoginPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarLoginPJActionPerformed
-        if (campEmailLoginPJ.getText().equals("Miguel Nicolelis") && CampSenhaLoginPJ.getText().equals("1234")){
-            JOptionPane.showInputDialog("Por favor, confirme seu acesso com seu CNPJ.");
+        // Captura os dados inseridos nos campos de texto
+    String cnpj = campEmailLoginPJ.getText();
+    String senha = CampSenhaLoginPJ.getText();
+
+    // Validação básica do CNPJ
+    if (cnpj == null || cnpj.isEmpty() || !UsuarioPJ.validarCnpj(cnpj)) {
+        JOptionPane.showMessageDialog(this, "CNPJ inválido. Verifique os dados e tente novamente.", "Erro", JOptionPane.ERROR_MESSAGE);
+        return; // Interrompe o fluxo em caso de erro
+    }
+
+    // Verificação inicial do login (CNPJ e senha)
+    if (BDuserPJ.verificarLogin(cnpj, senha)) {
+        // Solicita confirmação do nome da empresa para autenticação adicional
+        String nomeEmpresa = JOptionPane.showInputDialog("Confirme o nome da empresa:");
+        if (nomeEmpresa == null || nomeEmpresa.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Nome da empresa não informado. Operação cancelada.", "Erro", JOptionPane.ERROR_MESSAGE);
+            return;
         }
-        else{
-            JOptionPane.showMessageDialog(rootPane, "Dados não correspondentes aos usuários cadastrados.", "Acesso negado", HEIGHT);
+
+        // Verifica o login com o nome da empresa como confirmação
+        if (BDuserPJ.verificarLoginComEmpresa(cnpj, senha, nomeEmpresa)) {
+            JOptionPane.showMessageDialog(this, "Login bem-sucedido!", "Sucesso", JOptionPane.INFORMATION_MESSAGE);
+            // Abre a próxima tela após login (por exemplo, o menu principal)
+            new TelaMenuPJ().setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(this, "Credenciais inválidas! Verifique os dados e tente novamente.", "Erro", JOptionPane.ERROR_MESSAGE);
         }
+    } else {
+        JOptionPane.showMessageDialog(this, "Credenciais inválidas! Verifique o CNPJ e a senha e tente novamente.", "Erro", JOptionPane.ERROR_MESSAGE);
+    }
     }//GEN-LAST:event_btnEntrarLoginPJActionPerformed
 
     private void btnEsqueceuSenhaLoginPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEsqueceuSenhaLoginPJActionPerformed
@@ -384,6 +425,30 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
+    private void campEmailLoginPJFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_campEmailLoginPJFocusGained
+        if (campEmailLoginPJ.getText().equals("Digite seu login:")){
+            campEmailLoginPJ.setText("");
+        }
+    }//GEN-LAST:event_campEmailLoginPJFocusGained
+
+    private void CampSenhaLoginPJFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_CampSenhaLoginPJFocusGained
+        if (CampSenhaLoginPJ.getText().equals("0000000")){
+            CampSenhaLoginPJ.setText("");
+        }
+    }//GEN-LAST:event_CampSenhaLoginPJFocusGained
+
+    private void campEmailLoginPJFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_campEmailLoginPJFocusLost
+        if (campEmailLoginPJ.getText().isEmpty()){
+            campEmailLoginPJ.setText("Digite seu login:");
+        }
+    }//GEN-LAST:event_campEmailLoginPJFocusLost
+
+    private void CampSenhaLoginPJFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_CampSenhaLoginPJFocusLost
+        if (CampSenhaLoginPJ.getText().isEmpty()){
+            CampSenhaLoginPJ.setText("0000000");
+        }
+    }//GEN-LAST:event_CampSenhaLoginPJFocusLost
+
     /**
      * @param args the command line arguments
      */
@@ -410,6 +475,7 @@ public class LoginPJ_sdi extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(LoginPJ_sdi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        BDuserPJ.criarTabelas(); 
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {

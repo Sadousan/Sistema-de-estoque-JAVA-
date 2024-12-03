@@ -5,6 +5,8 @@
 package project_interface.view;
 
 import javax.swing.JOptionPane;
+import project_interface.util.BDuserPF;
+import project_interface.model.UsuarioPF;
 
 /**
  *
@@ -39,9 +41,9 @@ public class CadastroPF_sdi extends javax.swing.JFrame {
         javax.swing.JButton btnEntrarCadasPF = new javax.swing.JButton();
         javax.swing.JButton btnSalvaCadasPF = new javax.swing.JButton();
         javax.swing.JButton btnVoltarCadasPF = new javax.swing.JButton();
-        javax.swing.JFormattedTextField CampCPFCadasPF = new javax.swing.JFormattedTextField();
+        CampCPFCadasPF = new javax.swing.JFormattedTextField();
         javax.swing.JLabel jLabel5 = new javax.swing.JLabel();
-        javax.swing.JFormattedTextField CampEmailCadasPF = new javax.swing.JFormattedTextField();
+        CampEmailCadasPF = new javax.swing.JFormattedTextField();
         javax.swing.JLabel jLabel7 = new javax.swing.JLabel();
         MenuSexoCadasPF = new javax.swing.JComboBox<>();
         javax.swing.JLabel jLabel6 = new javax.swing.JLabel();
@@ -91,11 +93,29 @@ public class CadastroPF_sdi extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(51, 255, 255));
         jLabel4.setText("CPF:");
 
-        CampCadasSenhaPF.setText("jPasswordField1");
+        CampCadasSenhaPF.setText("0000000");
+        CampCadasSenhaPF.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                CampCadasSenhaPFFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                CampCadasSenhaPFFocusLost(evt);
+            }
+        });
+        CampCadasSenhaPF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CampCadasSenhaPFActionPerformed(evt);
+            }
+        });
 
         btnEntrarCadasPF.setBackground(new java.awt.Color(0, 255, 51));
         btnEntrarCadasPF.setForeground(new java.awt.Color(0, 0, 0));
         btnEntrarCadasPF.setText("Entrar");
+        btnEntrarCadasPF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEntrarCadasPFActionPerformed(evt);
+            }
+        });
 
         btnSalvaCadasPF.setBackground(new java.awt.Color(0, 255, 204));
         btnSalvaCadasPF.setForeground(new java.awt.Color(0, 0, 0));
@@ -131,6 +151,14 @@ public class CadastroPF_sdi extends javax.swing.JFrame {
         jLabel5.setText("Email:");
 
         CampEmailCadasPF.setText("Digite seu Email:");
+        CampEmailCadasPF.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                CampEmailCadasPFFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                CampEmailCadasPFFocusLost(evt);
+            }
+        });
         CampEmailCadasPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CampEmailCadasPFActionPerformed(evt);
@@ -141,7 +169,7 @@ public class CadastroPF_sdi extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(51, 255, 255));
         jLabel7.setText("Seu gênero:");
 
-        MenuSexoCadasPF.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Masculino", "Feminino", "Outros" }));
+        MenuSexoCadasPF.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "masculino", "feminino", "Outros" }));
         MenuSexoCadasPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MenuSexoCadasPFActionPerformed(evt);
@@ -151,6 +179,15 @@ public class CadastroPF_sdi extends javax.swing.JFrame {
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/iconestoque.png"))); // NOI18N
         jLabel6.setText("jLabel6");
 
+        compNomeComCadasPF.setText("Digite seu nome:");
+        compNomeComCadasPF.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                compNomeComCadasPFFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                compNomeComCadasPFFocusLost(evt);
+            }
+        });
         compNomeComCadasPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 compNomeComCadasPFActionPerformed(evt);
@@ -197,7 +234,7 @@ public class CadastroPF_sdi extends javax.swing.JFrame {
                         .addGap(236, 236, 236)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 584, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         telaDeCadastroPFLayout.setVerticalGroup(
             telaDeCadastroPFLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -330,7 +367,6 @@ public class CadastroPF_sdi extends javax.swing.JFrame {
     private void btnVoltarCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarCadasPFActionPerformed
         int resposta = JOptionPane.showConfirmDialog(rootPane, "Voltar pode acarretar a exclusão de seus dados. Deseja prosseguir?", "Verificação", JOptionPane.YES_NO_OPTION);
             if (resposta==JOptionPane.YES_OPTION){
-               new TelaPrincipalSDI().setVisible(true);
                this.dispose();
             }
     }//GEN-LAST:event_btnVoltarCadasPFActionPerformed
@@ -371,6 +407,82 @@ public class CadastroPF_sdi extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
+    private void btnEntrarCadasPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarCadasPFActionPerformed
+    String nome = compNomeComCadasPF.getText();
+    String cpf = CampCPFCadasPF.getText();
+    String email = CampEmailCadasPF.getText();
+    String senha = CampCadasSenhaPF.getText();
+    String genero = (String) MenuSexoCadasPF.getSelectedItem();
+    
+    // Validação do email
+    if (!email.contains(".com") || !email.contains("@")) {
+        JOptionPane.showMessageDialog(this, "Email inválido.", "Erro", JOptionPane.ERROR_MESSAGE);
+        return;  // Retorna para evitar continuar o cadastro com email inválido
+    }
+
+    // Verifica se todos os campos foram preenchidos corretamente
+    if (nome.isEmpty() || cpf.isEmpty() || email.isEmpty() || senha.isEmpty() || genero == null) {
+        JOptionPane.showMessageDialog(rootPane, "Por favor, preencha todos os campos!", "Erro de validação", JOptionPane.WARNING_MESSAGE);
+        return;  // Sai da função sem fazer nada se algum campo estiver vazio
+    }
+
+    // Criando um objeto UsuarioPF com os dados do formulário
+    UsuarioPF usuarioPF = new UsuarioPF(nome, cpf, email, senha, genero);
+
+    // Tenta inserir o usuário no banco de dados
+    boolean sucesso = BDuserPF.inserirUsuario(usuarioPF);
+
+    // Se a inserção foi bem-sucedida, abre a nova tela
+    if (sucesso) {
+        new TelaMenuPF().setVisible(true);
+        JOptionPane.showMessageDialog(rootPane, "Seja bem-vindo(a), " + nome + "!");
+        this.dispose();  // Fecha a janela atual
+    } else {
+        // Se a inserção falhou, mostra a mensagem de erro
+        JOptionPane.showMessageDialog(rootPane, "Erro ao analisar dados. Verifique se seu CPF ou email já foram cadastrados, ou se os campos foram preenchidos corretamente!", "Erro de validação.", JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_btnEntrarCadasPFActionPerformed
+
+    private void CampCadasSenhaPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampCadasSenhaPFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CampCadasSenhaPFActionPerformed
+
+    private void compNomeComCadasPFFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_compNomeComCadasPFFocusGained
+        if (compNomeComCadasPF.getText().equals("Digite seu nome:")) {
+            compNomeComCadasPF.setText("");
+        }
+    }//GEN-LAST:event_compNomeComCadasPFFocusGained
+
+    private void CampEmailCadasPFFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_CampEmailCadasPFFocusGained
+        if (CampEmailCadasPF.getText().equals("Digite seu Email:")) {
+            CampEmailCadasPF.setText("");
+        }
+    }//GEN-LAST:event_CampEmailCadasPFFocusGained
+
+    private void compNomeComCadasPFFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_compNomeComCadasPFFocusLost
+        if (compNomeComCadasPF.getText().isEmpty()) {
+            compNomeComCadasPF.setText("Digite seu nome:");
+        }
+    }//GEN-LAST:event_compNomeComCadasPFFocusLost
+
+    private void CampEmailCadasPFFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_CampEmailCadasPFFocusLost
+        if (compNomeComCadasPF.getText().isEmpty()) {
+            compNomeComCadasPF.setText("Digite seu Email:");
+        }
+    }//GEN-LAST:event_CampEmailCadasPFFocusLost
+
+    private void CampCadasSenhaPFFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_CampCadasSenhaPFFocusGained
+        if (CampCadasSenhaPF.getText().equals("0000000")) {
+            CampCadasSenhaPF.setText("");
+        }
+    }//GEN-LAST:event_CampCadasSenhaPFFocusGained
+
+    private void CampCadasSenhaPFFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_CampCadasSenhaPFFocusLost
+        if (CampCadasSenhaPF.getText().isEmpty()) {
+            CampCadasSenhaPF.setText("0000000");
+        }
+    }//GEN-LAST:event_CampCadasSenhaPFFocusLost
+
     /**
      * @param args the command line arguments
      */
@@ -397,6 +509,7 @@ public class CadastroPF_sdi extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(CadastroPF_sdi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        BDuserPF.criarTabelas(); 
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -407,7 +520,9 @@ public class CadastroPF_sdi extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    javax.swing.JFormattedTextField CampCPFCadasPF;
     javax.swing.JPasswordField CampCadasSenhaPF;
+    javax.swing.JFormattedTextField CampEmailCadasPF;
     javax.swing.JComboBox<String> MenuSexoCadasPF;
     javax.swing.JTextField compNomeComCadasPF;
     javax.swing.JSeparator jSeparator1;

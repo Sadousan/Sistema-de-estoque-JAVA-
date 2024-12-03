@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="jMenu1">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/project_interface/images/loginicon(1).png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Usu&#xe1;rio"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cadastre-se"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem9">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Esqueci minha senha"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Sair"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem2ActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu5">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/project_interface/images/P.J.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Pessoa Jur&#xed;dica"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem11">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cadastre-se"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem11ActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem12">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Login"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem12ActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu2">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/project_interface/images/contact(1).png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Contato"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Telefone"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="WhatsApp"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Email"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu4">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/project_interface/images/sobreicon.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Sobre"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem6">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Atualiza&#xe7;&#xf5;es"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem6ActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Descontos"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem8">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Novas integra&#xe7;&#xf5;es"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="0"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="TextPreço2" alignment="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="TextPreço2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="TextPre&#xe7;o2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="27" green="14" red="13" type="rgb"/>
+            </Property>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Cursor Padr&#xe3;o"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="textenomeproduto2" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnDeADDProdutoNaLista2" alignment="1" min="-2" pref="170" max="-2" attributes="0"/>
+                          <Component id="textquantidade2" alignment="1" min="-2" pref="107" max="-2" attributes="0"/>
+                          <Component id="texquantidade2" alignment="1" min="-2" pref="107" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                      <Component id="btnEditarListaDeProduto4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="btnEditarListaDeProduto5" min="-2" pref="148" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="campoTelaEstoquePreçoDoProduto2" alignment="1" min="-2" pref="227" max="-2" attributes="0"/>
+                          <Component id="campoTelaEstoqueQuantidadeDoProduto2" alignment="1" min="-2" pref="227" max="-2" attributes="0"/>
+                          <Component id="campoTelaEstoqueDeNomeDoProduto3" alignment="1" min="-2" pref="227" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
+                              <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="210" max="-2" attributes="0"/>
+                              <Component id="jLabel3" min="-2" pref="255" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="113" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="campoTelaEstoqueDeNomeDoProduto3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="textenomeproduto2" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="textquantidade2" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="campoTelaEstoquePreçoDoProduto2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="texquantidade2" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="campoTelaEstoqueQuantidadeDoProduto2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="btnDeADDProdutoNaLista2" alignment="3" max="32767" attributes="0"/>
+                              <Component id="btnEditarListaDeProduto4" alignment="3" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="btnEditarListaDeProduto5" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                      <Component id="jScrollPane3" min="-2" pref="412" max="-2" attributes="0"/>
+                      <EmptySpace pref="382" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="24" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Controle de Estoque:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnEditarListaDeProduto4">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="ff" red="0" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Cantarell" size="15" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Editar Lista"/>
+                <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[75, 25]"/>
+                </Property>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[75, 25]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[125, 30]"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEditarListaDeProduto4ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnDeADDProdutoNaLista2">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="ff" red="0" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Cantarell" size="15" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Adicionar Produto"/>
+                <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[125, 25]"/>
+                </Property>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[125, 25]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[125, 30]"/>
+                </Property>
+                <Property name="selected" type="boolean" value="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeADDProdutoNaLista2ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="textquantidade2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="14" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Pre&#xe7;o:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="textenomeproduto2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="14" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Nome do Produto:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="texquantidade2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="14" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Quantidade:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="campoTelaEstoquePre&#xe7;oDoProduto2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Informe o valor do produto:"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JTextField" name="campoTelaEstoqueDeNomeDoProduto3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Informe o nome do produto:"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campoTelaEstoqueDeNomeDoProduto3ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JTextField" name="campoTelaEstoqueQuantidadeDoProduto2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Informe a quantidade:"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnEditarListaDeProduto5">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="66" red="cc" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Cantarell" size="15" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Excluir Produto"/>
+                <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[75, 25]"/>
+                </Property>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[75, 25]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[125, 30]"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEditarListaDeProduto5ActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTable" name="tabelaDeControleDeEstoque2">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new javax.swing.table.DefaultTableModel(&#xa;&#xa;// Defini&#xe7;&#xe3;o do modelo da tabela&#xa;tabelaDeControleDeEstoque2.setModel(new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;        // Aqui voc&#xea; ir&#xe1; preencher as linhas da tabela com dados do banco de dados&#xa;    },&#xa;    new String [] {&#xa;        &quot;id:&quot;, &quot;Nome:&quot;, &quot;Pre&#xe7;o:&quot;, &quot;Quantidade:&quot;, &quot;Montante:&quot; // Cabe&#xe7;alhos da tabela&#xa;    }&#xa;) {&#xa;    // Definindo tipos de cada coluna&#xa;    Class[] types = new Class [] {&#xa;        java.lang.Object.class, java.lang.String.class, java.lang.Double.class, java.lang.Double.class, java.lang.Double.class&#xa;    };&#xa;    // Definindo se as c&#xe9;lulas s&#xe3;o edit&#xe1;veis (n&#xe3;o edit&#xe1;veis no caso)&#xa;    boolean[] canEdit = new boolean [] {&#xa;        false, false, false, false, false // N&#xe3;o permite edi&#xe7;&#xe3;o direta na tabela&#xa;    };&#xa;&#xa;    public Class getColumnClass(int columnIndex) {&#xa;        return types [columnIndex]; // Retorna o tipo da coluna&#xa;    }&#xa;&#xa;    public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;        return canEdit [columnIndex]; // Impede a edi&#xe7;&#xe3;o nas c&#xe9;lulas&#xa;    }&#xa;});&#xa;&#xa;// Adicionando a tabela ao JScrollPane&#xa;jScrollPane3.setViewportView(tabelaDeControleDeEstoque2);&#xa;&#xa;// M&#xe9;todo para carregar produtos na tabela&#xa;private void carregarProdutosNaTabela() {&#xa;    // Limpar tabela antes de atualizar&#xa;    DefaultTableModel model = (DefaultTableModel) tabelaDeControleDeEstoque2.getModel();&#xa;    model.setRowCount(0);  // Limpa a tabela&#xa;&#xa;    // Recuperar lista de produtos do banco de dados&#xa;    BDprodutoPJ bdProdutoPJ = new BDprodutoPJ();&#xa;    List&lt;ProdutoPJ&gt; produtos = bdProdutoPJ.listarProdutos(); // Obt&#xe9;m os produtos da base de dados&#xa;&#xa;    // Preencher a tabela com os produtos&#xa;    for (ProdutoPJ produto : produtos) {&#xa;        model.addRow(new Object[]{&#xa;            produto.getId(),&#xa;            produto.getNome(),&#xa;            produto.getPreco(),&#xa;            produto.getQuantidade(),&#xa;            produto.getMontante()&#xa;        });&#xa;    }&#xa;}&#xa;&#xa;// M&#xe9;todo para adicionar produto&#xa;private void btnAdicionarProdutoActionPerformed(java.awt.event.ActionEvent evt) {&#xa;    String nome = campoNomeProduto.getText();&#xa;    double preco = Double.parseDouble(campoPrecoProduto.getText());&#xa;    int quantidade = Integer.parseInt(campoQuantidadeProduto.getText());&#xa;&#xa;    // Verifica&#xe7;&#xe3;o se os valores s&#xe3;o v&#xe1;lidos&#xa;    if (preco &lt;= 0 || quantidade &lt; 0) {&#xa;        JOptionPane.showMessageDialog(this, &quot;Pre&#xe7;o e quantidade devem ser positivos.&quot;, &quot;Erro&quot;, JOptionPane.ERROR_MESSAGE);&#xa;        return;&#xa;    }&#xa;&#xa;    ProdutoPJ novoProduto = new ProdutoPJ(0, nome, preco, quantidade);&#xa;    BDprodutoPJ bdProdutoPJ = new BDprodutoPJ();&#xa;&#xa;    // Chama o m&#xe9;todo de adicionar no banco&#xa;    boolean sucesso = bdProdutoPJ.adicionarProduto(novoProduto);&#xa;    if (sucesso) {&#xa;        carregarProdutosNaTabela(); // Atualiza a tabela ap&#xf3;s adicionar o produto&#xa;        JOptionPane.showMessageDialog(this, &quot;Produto adicionado com sucesso.&quot;);&#xa;    } else {&#xa;        JOptionPane.showMessageDialog(this, &quot;Erro ao adicionar produto.&quot;, &quot;Erro&quot;, JOptionPane.ERROR_MESSAGE);&#xa;    }&#xa;}&#xa;&#xa;// M&#xe9;todo para excluir produto&#xa;private void btnExcluirProdutoActionPerformed(java.awt.event.ActionEvent evt) {&#xa;    int linhaSelecionada = tabelaDeControleDeEstoque2.getSelectedRow();&#xa;    if (linhaSelecionada != -1) {&#xa;        int id = (int) tabelaDeControleDeEstoque2.getValueAt(linhaSelecionada, 0);&#xa;        BDprodutoPJ bdProdutoPJ = new BDprodutoPJ();&#xa;&#xa;        // Chama o m&#xe9;todo de exclus&#xe3;o do banco&#xa;        boolean sucesso = bdProdutoPJ.excluirProduto(id);&#xa;        if (sucesso) {&#xa;            carregarProdutosNaTabela(); // Atualiza a tabela ap&#xf3;s excluir o produto&#xa;            JOptionPane.showMessageDialog(this, &quot;Produto exclu&#xed;do com sucesso.&quot;);&#xa;        } else {&#xa;            JOptionPane.showMessageDialog(this, &quot;Erro ao excluir produto.&quot;, &quot;Erro&quot;, JOptionPane.ERROR_MESSAGE);&#xa;        }&#xa;    }&#xa;}&#xa;&#xa;// M&#xe9;todo para remover quantidade de um produto&#xa;private void btnRemoverQuantidadeActionPerformed(java.awt.event.ActionEvent evt) {&#xa;    int linhaSelecionada = tabelaDeControleDeEstoque2.getSelectedRow();&#xa;    if (linhaSelecionada != -1) {&#xa;        int id = (int) tabelaDeControleDeEstoque2.getValueAt(linhaSelecionada, 0);&#xa;        int quantidadeRemover = Integer.parseInt(JOptionPane.showInputDialog(this, &quot;Quantidade a remover:&quot;));&#xa;&#xa;        // Verifica&#xe7;&#xe3;o de quantidade a ser removida&#xa;        if (quantidadeRemover &lt;= 0) {&#xa;            JOptionPane.showMessageDialog(this, &quot;Quantidade a remover deve ser positiva.&quot;, &quot;Erro&quot;, JOptionPane.ERROR_MESSAGE);&#xa;            return;&#xa;        }&#xa;&#xa;        BDprodutoPJ bdProdutoPJ = new BDprodutoPJ();&#xa;&#xa;        // Chama o m&#xe9;todo de remover quantidade do banco&#xa;        boolean sucesso = bdProdutoPJ.removerQuantidadeProduto(id, quantidadeRemover);&#xa;        if (sucesso) {&#xa;            carregarProdutosNaTabela(); // Atualiza a tabela ap&#xf3;s a remo&#xe7;&#xe3;o de quantidade&#xa;            JOptionPane.showMessageDialog(this, &quot;Quantidade removida com sucesso.&quot;);&#xa;        } else {&#xa;            JOptionPane.showMessageDialog(this, &quot;Erro ao remover quantidade.&quot;, &quot;Erro&quot;, JOptionPane.ERROR_MESSAGE);&#xa;        }&#xa;    }&#xa;}&#xa;&#xa;// M&#xe9;todo para modificar produto (pre&#xe7;o ou quantidade)&#xa;private void btnModificarProdutoActionPerformed(java.awt.event.ActionEvent evt) {&#xa;    int linhaSelecionada = tabelaDeControleDeEstoque2.getSelectedRow();&#xa;    if (linhaSelecionada != -1) {&#xa;        int id = (int) tabelaDeControleDeEstoque2.getValueAt(linhaSelecionada, 0);&#xa;        String nome = campoNomeProduto.getText();&#xa;        double preco = Double.parseDouble(campoPrecoProduto.getText());&#xa;        int quantidade = Integer.parseInt(campoQuantidadeProduto.getText());&#xa;&#xa;        ProdutoPJ produtoModificado = new ProdutoPJ(id, nome, preco, quantidade);&#xa;        BDprodutoPJ bdProdutoPJ = new BDprodutoPJ();&#xa;&#xa;        // Chama o m&#xe9;todo de modifica&#xe7;&#xe3;o do banco&#xa;        boolean sucesso = bdProdutoPJ.modificarProduto(id, produtoModificado);&#xa;        if (sucesso) {&#xa;            carregarProdutosNaTabela(); // Atualiza a tabela ap&#xf3;s modificar o produto&#xa;            JOptionPane.showMessageDialog(this, &quot;Produto modificado com sucesso.&quot;);&#xa;        } else {&#xa;            JOptionPane.showMessageDialog(this, &quot;Erro ao modificar produto.&quot;, &quot;Erro&quot;, JOptionPane.ERROR_MESSAGE);&#xa;        }&#xa;    }&#xa;}&#xa;" type="code"/>
+                    </Property>
+                    <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                      <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable()"/>
+                    <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

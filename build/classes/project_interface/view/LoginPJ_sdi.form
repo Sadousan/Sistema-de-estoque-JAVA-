@@ -292,9 +292,11 @@
         </Component>
         <Component class="javax.swing.JPasswordField" name="CampSenhaLoginPJ">
           <Properties>
-            <Property name="text" type="java.lang.String" value="*******"/>
+            <Property name="text" type="java.lang.String" value="0000000"/>
           </Properties>
           <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="CampSenhaLoginPJFocusGained"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="CampSenhaLoginPJFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CampSenhaLoginPJActionPerformed"/>
           </Events>
           <AuxValues>
@@ -325,9 +327,11 @@
         </Component>
         <Component class="javax.swing.JTextField" name="campEmailLoginPJ">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Digite seu login"/>
+            <Property name="text" type="java.lang.String" value="Digite seu login:"/>
           </Properties>
           <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="campEmailLoginPJFocusGained"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="campEmailLoginPJFocusLost"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campEmailLoginPJActionPerformed"/>
           </Events>
           <AuxValues>

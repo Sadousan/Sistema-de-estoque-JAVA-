@@ -84,7 +84,7 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("telaprincipalSDI");
         setResizable(false);
 
@@ -289,7 +289,7 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
     }//GEN-LAST:event_fazer_cadastroActionPerformed
 
     private void criar_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_criar_loginActionPerformed
-        new LoginPF_sdi(this, true).setVisible(true);
+        new LoginPF_sdi().setVisible(true);
         
 
     }//GEN-LAST:event_criar_loginActionPerformed
@@ -318,7 +318,7 @@ public class TelaPrincipalSDI extends javax.swing.JFrame {
             new TelaEscolhaCadLoginPJ().setVisible(true);
         }
         else{
-                JOptionPane.showMessageDialog(rootPane, "Ocorreu um erro! revise a opção selecionada.", "Opção inválida.", HEIGHT);
+                JOptionPane.showMessageDialog(rootPane, "Ocorreu um erro! Revise a opção selecionada.", "Opção inválida :(", HEIGHT);
         }
     }//GEN-LAST:event_submeterActionPerformed
 

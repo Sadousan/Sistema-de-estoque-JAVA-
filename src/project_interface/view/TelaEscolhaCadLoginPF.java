@@ -114,7 +114,7 @@ public class TelaEscolhaCadLoginPF extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_JaPossuiLoginTelaPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_JaPossuiLoginTelaPrincipalActionPerformed
-        new LoginPF_sdi(this, true).setVisible(true);
+        new LoginPF_sdi().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btn_JaPossuiLoginTelaPrincipalActionPerformed
 

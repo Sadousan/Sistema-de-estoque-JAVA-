@@ -5,6 +5,8 @@
 package project_interface.view;
 
 import javax.swing.JOptionPane;
+import project_interface.model.UsuarioPJ;
+import project_interface.util.BDuserPJ;
 
 /**
  *
@@ -42,9 +44,8 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         CampNomeEmpreCadasPJ = new javax.swing.JTextField();
         javax.swing.JLabel jLabel4 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        javax.swing.JFormattedTextField campCNPJCadasPJ = new javax.swing.JFormattedTextField();
+        camEmailPJ = new javax.swing.JFormattedTextField();
         javax.swing.JLabel jLabel5 = new javax.swing.JLabel();
-        campSenhaCadasPJ = new javax.swing.JFormattedTextField();
         javax.swing.JLabel jLabel6 = new javax.swing.JLabel();
         javax.swing.JPanel jPanel3 = new javax.swing.JPanel();
         javax.swing.JLabel jLabel7 = new javax.swing.JLabel();
@@ -52,14 +53,17 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         javax.swing.JLabel jLabel9 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel10 = new javax.swing.JLabel();
         javax.swing.JLabel jLabel11 = new javax.swing.JLabel();
-        javax.swing.JFormattedTextField campCEPCadasPJ = new javax.swing.JFormattedTextField();
-        javax.swing.JTextField campRuaCadasPJ = new javax.swing.JTextField();
-        javax.swing.JTextField campBairroCadasPJ = new javax.swing.JTextField();
-        javax.swing.JTextField campNumeRuaCadasPJ = new javax.swing.JTextField();
-        javax.swing.JTextField campUFCadasPJ = new javax.swing.JTextField();
+        campCEPCadasPJ = new javax.swing.JFormattedTextField();
+        campRuaCadasPJ = new javax.swing.JTextField();
+        campBairroCadasPJ = new javax.swing.JTextField();
+        campNumeRuaCadasPJ = new javax.swing.JTextField();
+        campUFCadasPJ = new javax.swing.JTextField();
         javax.swing.JButton btnVoltarCadasPJ = new javax.swing.JButton();
         javax.swing.JButton bntSalvarCadasPJ = new javax.swing.JButton();
         javax.swing.JButton bntEntrarCadasPJ = new javax.swing.JButton();
+        javax.swing.JLabel jLabel12 = new javax.swing.JLabel();
+        campCNPJCadasPJ1 = new javax.swing.JFormattedTextField();
+        campSenhaPJ = new javax.swing.JPasswordField();
         javax.swing.JMenuBar jMenuBar1 = new javax.swing.JMenuBar();
         javax.swing.JMenu botaoMenuUsuario = new javax.swing.JMenu();
         javax.swing.JMenuItem botaoMenuCadastreSeUsuarioPF = new javax.swing.JMenuItem();
@@ -144,7 +148,7 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cadastro de Pessoa Jurídica");
-        setMinimumSize(new java.awt.Dimension(570, 766));
+        setMinimumSize(new java.awt.Dimension(570, 820));
         setResizable(false);
         getContentPane().setLayout(null);
 
@@ -163,6 +167,26 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(51, 255, 255));
         jLabel2.setText("Nome da Empresa:");
 
+        CampNomeEmpreCadasPJ.setText("Digite o nome da empresa:");
+        CampNomeEmpreCadasPJ.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                CampNomeEmpreCadasPJFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                CampNomeEmpreCadasPJFocusLost(evt);
+            }
+        });
+        CampNomeEmpreCadasPJ.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CampNomeEmpreCadasPJMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                CampNomeEmpreCadasPJMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                CampNomeEmpreCadasPJMouseExited(evt);
+            }
+        });
         CampNomeEmpreCadasPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CampNomeEmpreCadasPJActionPerformed(evt);
@@ -173,23 +197,35 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(51, 255, 255));
         jLabel4.setText("CNPJ:");
 
-        campCNPJCadasPJ.setText("Informe o CNPJ");
-        campCNPJCadasPJ.addActionListener(new java.awt.event.ActionListener() {
+        camEmailPJ.setText("Digite seu email:");
+        camEmailPJ.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                camEmailPJFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                camEmailPJFocusLost(evt);
+            }
+        });
+        camEmailPJ.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                camEmailPJMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                camEmailPJMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                camEmailPJMouseExited(evt);
+            }
+        });
+        camEmailPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campCNPJCadasPJActionPerformed(evt);
+                camEmailPJActionPerformed(evt);
             }
         });
 
         jLabel5.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(51, 255, 255));
-        jLabel5.setText("Senha:");
-
-        campSenhaCadasPJ.setText("Informe a senha");
-        campSenhaCadasPJ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campSenhaCadasPJActionPerformed(evt);
-            }
-        });
+        jLabel5.setText("Email:");
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/iconestoque.png"))); // NOI18N
         jLabel6.setText("jLabel6");
@@ -216,6 +252,17 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         jLabel11.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(51, 255, 255));
         jLabel11.setText("Nº:");
+
+        try {
+            campCEPCadasPJ.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#####-###")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        campCEPCadasPJ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campCEPCadasPJActionPerformed(evt);
+            }
+        });
 
         campRuaCadasPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -248,7 +295,7 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(campCEPCadasPJ)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel10)
@@ -302,6 +349,43 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         bntEntrarCadasPJ.setBackground(new java.awt.Color(0, 255, 51));
         bntEntrarCadasPJ.setForeground(new java.awt.Color(0, 0, 0));
         bntEntrarCadasPJ.setText("Entrar");
+        bntEntrarCadasPJ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntEntrarCadasPJActionPerformed(evt);
+            }
+        });
+
+        jLabel12.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel12.setText("Senha:");
+
+        campCNPJCadasPJ1.setText("Informe o CNPJ:");
+        campCNPJCadasPJ1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                campCNPJCadasPJ1FocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                campCNPJCadasPJ1FocusLost(evt);
+            }
+        });
+        campCNPJCadasPJ1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                campCNPJCadasPJ1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                campCNPJCadasPJ1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                campCNPJCadasPJ1MouseExited(evt);
+            }
+        });
+        campCNPJCadasPJ1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campCNPJCadasPJ1ActionPerformed(evt);
+            }
+        });
+
+        campSenhaPJ.setText("jPasswordField1");
 
         javax.swing.GroupLayout telaCadastroPJLayout = new javax.swing.GroupLayout(telaCadastroPJ);
         telaCadastroPJ.setLayout(telaCadastroPJLayout);
@@ -310,69 +394,92 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
             .addGroup(telaCadastroPJLayout.createSequentialGroup()
                 .addGroup(telaCadastroPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(telaCadastroPJLayout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(telaCadastroPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addGroup(telaCadastroPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel4)
-                                .addComponent(jLabel5)
-                                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(campSenhaCadasPJ)
-                                .addComponent(campCNPJCadasPJ)
-                                .addComponent(CampNomeEmpreCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaCadastroPJLayout.createSequentialGroup()
-                                    .addComponent(btnVoltarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(59, 59, 59)
-                                    .addComponent(bntSalvarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(bntEntrarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(telaCadastroPJLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 560, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(227, 227, 227)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(telaCadastroPJLayout.createSequentialGroup()
                         .addGap(240, 240, 240)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(telaCadastroPJLayout.createSequentialGroup()
-                        .addGap(227, 227, 227)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(37, Short.MAX_VALUE))
+                        .addGap(6, 6, 6)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 560, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(telaCadastroPJLayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jLabel2))
+                    .addGroup(telaCadastroPJLayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(CampNomeEmpreCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(telaCadastroPJLayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jLabel4))
+                    .addGroup(telaCadastroPJLayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(campCNPJCadasPJ1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(telaCadastroPJLayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addGroup(telaCadastroPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(telaCadastroPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(campSenhaPJ, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, telaCadastroPJLayout.createSequentialGroup()
+                                    .addComponent(btnVoltarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(59, 59, 59)
+                                    .addComponent(bntSalvarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(bntEntrarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(camEmailPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel12))))
+                .addGap(0, 37, Short.MAX_VALUE))
         );
         telaCadastroPJLayout.setVerticalGroup(
             telaCadastroPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(telaCadastroPJLayout.createSequentialGroup()
                 .addGap(43, 43, 43)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(12, 12, 12)
                 .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(12, 12, 12)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(CampNomeEmpreCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(campCNPJCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel5)
                 .addGap(12, 12, 12)
-                .addComponent(campSenhaCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(CampNomeEmpreCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(jLabel4)
+                .addGap(6, 6, 6)
+                .addComponent(campCNPJCadasPJ1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(jLabel5)
+                .addGap(3, 3, 3)
+                .addComponent(camEmailPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(campSenhaPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(7, 7, 7)
                 .addGroup(telaCadastroPJLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bntEntrarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bntSalvarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnVoltarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(70, Short.MAX_VALUE))
+                    .addComponent(bntEntrarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnVoltarCadasPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         getContentPane().add(telaCadastroPJ);
-        telaCadastroPJ.setBounds(0, -30, 570, 760);
+        telaCadastroPJ.setBounds(0, -30, 570, 790);
 
         botaoMenuUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_interface/images/loginicon(1).png"))); // NOI18N
         botaoMenuUsuario.setText("Usuário");
+        botaoMenuUsuario.addHierarchyListener(new java.awt.event.HierarchyListener() {
+            public void hierarchyChanged(java.awt.event.HierarchyEvent evt) {
+                botaoMenuUsuarioHierarchyChanged(evt);
+            }
+        });
+        botaoMenuUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoMenuUsuarioActionPerformed(evt);
+            }
+        });
 
         botaoMenuCadastreSeUsuarioPF.setText("Cadastre-se");
         botaoMenuCadastreSeUsuarioPF.addActionListener(new java.awt.event.ActionListener() {
@@ -478,7 +585,8 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
     }//GEN-LAST:event_botaoMenuCadrasteSePJActionPerformed
 
     private void botaoMenuLoginPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoMenuLoginPJActionPerformed
-        // TODO add your handling code here:
+        new LoginPJ_sdi().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_botaoMenuLoginPJActionPerformed
 
     private void botaoMenuAtualiSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoMenuAtualiSobreActionPerformed
@@ -492,7 +600,6 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
     private void btnVoltarCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarCadasPJActionPerformed
         int resposta = JOptionPane.showConfirmDialog(rootPane, "Voltar pode acarretar a exclusão de seus dados. Deseja prosseguir?", "Verificação", JOptionPane.YES_NO_OPTION);
             if (resposta==JOptionPane.YES_OPTION){
-                new TelaPrincipalSDI().setVisible(true);
                 this.dispose();
             }
     }//GEN-LAST:event_btnVoltarCadasPJActionPerformed
@@ -501,21 +608,153 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_campRuaCadasPJActionPerformed
 
-    private void campSenhaCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campSenhaCadasPJActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_campSenhaCadasPJActionPerformed
-
-    private void campCNPJCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campCNPJCadasPJActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_campCNPJCadasPJActionPerformed
+    private void camEmailPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_camEmailPJActionPerformed
+        if(CampNomeEmpreCadasPJ.getText().equals("Digite o nome da empresa:")){
+            CampNomeEmpreCadasPJ.setText(" ");
+        }
+        else if(CampNomeEmpreCadasPJ.getText().equals(" ")){
+            CampNomeEmpreCadasPJ.setText("Digite o nome da empresa:");
+        }
+    }//GEN-LAST:event_camEmailPJActionPerformed
 
     private void CampNomeEmpreCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampNomeEmpreCadasPJActionPerformed
-
+        
     }//GEN-LAST:event_CampNomeEmpreCadasPJActionPerformed
 
     private void campUFCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campUFCadasPJActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_campUFCadasPJActionPerformed
+
+    private void campCEPCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campCEPCadasPJActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campCEPCadasPJActionPerformed
+
+    private void bntEntrarCadasPJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntEntrarCadasPJActionPerformed
+    String nomeEmpresa = CampNomeEmpreCadasPJ.getText();
+    String cnpj = campCNPJCadasPJ1.getText(); 
+    String email = camEmailPJ.getText(); 
+    String senha = new String(campSenhaPJ.getPassword()); 
+    String cep = campCEPCadasPJ.getText(); 
+    String bairro = campBairroCadasPJ.getText();
+    String uf = campUFCadasPJ.getText(); 
+    String rua = campRuaCadasPJ.getText();
+    int numero = Integer.parseInt(campNumeRuaCadasPJ.getText());
+
+    // Verificação de campos obrigatórios
+    if (nomeEmpresa.isEmpty() || cnpj.isEmpty() || email.isEmpty() || senha.isEmpty() || cep.isEmpty() || bairro.isEmpty() || uf.isEmpty() || rua.isEmpty() || campNumeRuaCadasPJ.getText().isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Por favor, preencha todos os campos.");
+        return;
+    }
+
+    // Criando um novo objeto UsuarioPJ com os dados obtidos
+    UsuarioPJ usuarioPJ = new UsuarioPJ(nomeEmpresa, cnpj, email, senha, cep, bairro, uf, numero, rua);
+
+    boolean sucesso = BDuserPJ.inserirUsuario(usuarioPJ);
+
+    if (sucesso) {
+        JOptionPane.showMessageDialog(this, "Cadastro realizado com sucesso!");
+        limparCampos(); // Limpa os campos após cadastro (opcional)
+    } else {
+        JOptionPane.showMessageDialog(this, "Erro ao realizar o cadastro. Verifique os dados e tente novamente.");
+    }
+}
+
+private void limparCampos() {
+    CampNomeEmpreCadasPJ.setText("");
+    campCNPJCadasPJ1.setText("");
+    camEmailPJ.setText("");
+    campSenhaPJ.setText("");
+    campCEPCadasPJ.setText("");
+    campBairroCadasPJ.setText("");
+    campUFCadasPJ.setText("");
+    campRuaCadasPJ.setText("");
+    campNumeRuaCadasPJ.setText("");
+    }//GEN-LAST:event_bntEntrarCadasPJActionPerformed
+
+    private void CampNomeEmpreCadasPJMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CampNomeEmpreCadasPJMouseClicked
+        
+        
+    }//GEN-LAST:event_CampNomeEmpreCadasPJMouseClicked
+
+    private void CampNomeEmpreCadasPJMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CampNomeEmpreCadasPJMouseExited
+        
+    }//GEN-LAST:event_CampNomeEmpreCadasPJMouseExited
+
+    private void CampNomeEmpreCadasPJMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CampNomeEmpreCadasPJMouseEntered
+        
+    }//GEN-LAST:event_CampNomeEmpreCadasPJMouseEntered
+
+    private void camEmailPJMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_camEmailPJMouseClicked
+        
+    }//GEN-LAST:event_camEmailPJMouseClicked
+
+    private void camEmailPJMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_camEmailPJMouseEntered
+        
+    }//GEN-LAST:event_camEmailPJMouseEntered
+
+    private void camEmailPJMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_camEmailPJMouseExited
+        
+    }//GEN-LAST:event_camEmailPJMouseExited
+
+    private void botaoMenuUsuarioHierarchyChanged(java.awt.event.HierarchyEvent evt) {//GEN-FIRST:event_botaoMenuUsuarioHierarchyChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botaoMenuUsuarioHierarchyChanged
+
+    private void botaoMenuUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoMenuUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botaoMenuUsuarioActionPerformed
+
+    private void CampNomeEmpreCadasPJFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_CampNomeEmpreCadasPJFocusGained
+        if (CampNomeEmpreCadasPJ.getText().equals("Digite o nome da empresa:")) {
+            CampNomeEmpreCadasPJ.setText("");
+        }
+    }//GEN-LAST:event_CampNomeEmpreCadasPJFocusGained
+
+    private void camEmailPJFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_camEmailPJFocusGained
+        if (camEmailPJ.getText().equals("Digite seu email:")) {
+            camEmailPJ.setText("");
+        }
+    }//GEN-LAST:event_camEmailPJFocusGained
+
+    private void CampNomeEmpreCadasPJFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_CampNomeEmpreCadasPJFocusLost
+        if (CampNomeEmpreCadasPJ.getText().isEmpty()) {
+            CampNomeEmpreCadasPJ.setText("Digite o nome da empresa:");
+        }
+    }//GEN-LAST:event_CampNomeEmpreCadasPJFocusLost
+
+    private void camEmailPJFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_camEmailPJFocusLost
+        if (camEmailPJ.getText().isEmpty()) {
+            camEmailPJ.setText("Digite seu email:");
+        }
+    }//GEN-LAST:event_camEmailPJFocusLost
+
+    private void campCNPJCadasPJ1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_campCNPJCadasPJ1FocusGained
+        if (campCNPJCadasPJ1.getText().equals("Informe o CNPJ:")){
+            campCNPJCadasPJ1.setText("");
+        }
+    }//GEN-LAST:event_campCNPJCadasPJ1FocusGained
+
+    private void campCNPJCadasPJ1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_campCNPJCadasPJ1FocusLost
+        if (campCNPJCadasPJ1.getText().isEmpty()){
+            campCNPJCadasPJ1.setText("Informe o CNPJ:");
+        }
+    }//GEN-LAST:event_campCNPJCadasPJ1FocusLost
+
+    private void campCNPJCadasPJ1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_campCNPJCadasPJ1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campCNPJCadasPJ1MouseClicked
+
+    private void campCNPJCadasPJ1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_campCNPJCadasPJ1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campCNPJCadasPJ1MouseEntered
+
+    private void campCNPJCadasPJ1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_campCNPJCadasPJ1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campCNPJCadasPJ1MouseExited
+
+    private void campCNPJCadasPJ1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campCNPJCadasPJ1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campCNPJCadasPJ1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -543,6 +782,8 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(CadastroPJ_sdi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        BDuserPJ.criarTabelas();
+
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -554,7 +795,14 @@ public class CadastroPJ_sdi extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     javax.swing.JTextField CampNomeEmpreCadasPJ;
-    javax.swing.JFormattedTextField campSenhaCadasPJ;
+    javax.swing.JFormattedTextField camEmailPJ;
+    javax.swing.JTextField campBairroCadasPJ;
+    javax.swing.JFormattedTextField campCEPCadasPJ;
+    javax.swing.JFormattedTextField campCNPJCadasPJ1;
+    javax.swing.JTextField campNumeRuaCadasPJ;
+    javax.swing.JTextField campRuaCadasPJ;
+    javax.swing.JPasswordField campSenhaPJ;
+    javax.swing.JTextField campUFCadasPJ;
     javax.swing.JSeparator jSeparator1;
     javax.swing.JPanel telaCadastroPJ;
     // End of variables declaration//GEN-END:variables

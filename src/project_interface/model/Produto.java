@@ -1,11 +1,17 @@
 package project_interface.model;
 
-import javax.swing.JOptionPane;
-
 public class Produto {
+    private int id;
     private String nome;
     private double preco;
     private int quantidade;
+
+    public Produto(int id, String nome, double preco, int quantidade) {
+        this.id = id;
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidade = quantidade;
+    }
 
     public Produto(String nome, double preco, int quantidade) {
         this.nome = nome;
@@ -13,23 +19,30 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
-    // Métodos para entrada e saída de estoque
     public void entrada(int quantidade) {
-        this.quantidade += quantidade;
-        if (this.quantidade <=0){
-            throw new IllegalArgumentException("Valor nulo ou negativo não podem ser adicionados ao estoque!");
+        if (quantidade <= 0) {
+            throw new IllegalArgumentException("A quantidade de entrada deve ser maior que zero.");
         }
+        this.quantidade += quantidade;
     }
 
     public void saida(int quantidade) {
-        if (quantidade <= this.quantidade) {
-            this.quantidade -= quantidade;
-        } else {
+        if (quantidade <= 0) {
+            throw new IllegalArgumentException("A quantidade de saída deve ser maior que zero.");
+        } else if (quantidade > this.quantidade) {
             throw new IllegalArgumentException("Quantidade insuficiente no estoque.");
         }
+        this.quantidade -= quantidade;
     }
 
-    // Getters e Setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -54,10 +67,9 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
-    // Método para exibir detalhes
     public String detalhes() {
-        return String.format("Produto: %s\nPreço: R$ %.2f\nQuantidade: %d\nValor Total: R$ %.2f",
-                nome, preco, quantidade, preco * quantidade);
+        return String.format(
+                "ID: %d\nProduto: %s\nPreço: R$ %.2f\nQuantidade: %d\nValor Total: R$ %.2f",
+                id, nome, preco, quantidade, preco * quantidade);
     }
 }
-
